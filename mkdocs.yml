@@ -64,6 +64,7 @@ extra_javascript:
 
 nav:
   - 首页: index.md
+  - 前言: docs/preface.md
   - 教材总览:
       - 教材总纲: docs/book-outline.md
       - 学习路径: docs/learning-path.md
@@ -84,3 +85,5 @@ nav:
       - 第 12 章 线性模型中的数学: chapters/12-linear-models.md
       - 第 13 章 神经网络的数学基础: chapters/13-neural-network-math.md
       - 第 14 章 通过模型复盘数学: chapters/14-math-review-through-models.md
+  - 附录:
+      - 附录 A 术语与符号表: docs/appendix/notation-glossary.md

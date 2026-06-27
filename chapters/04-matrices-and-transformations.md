@@ -7,7 +7,7 @@
   <p>这一章会把前面学到的向量进一步组织起来，让你理解矩阵既是“按行按列排好的数字表”，也是“把向量整体变换”的工具。</p>
 </div>
 
-<div class="reading-focus">
+<div class="reading-focus" markdown="1">
 <strong>阅读重点</strong>
 
 - 先把矩阵理解成“有行有列的数字表”，建立行列定位意识

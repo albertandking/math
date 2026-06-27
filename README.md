@@ -4,12 +4,15 @@
 </div>
 
 [开始阅读](chapters/01-foundations.md){ .md-button .md-button--primary }
+[阅读前言](docs/preface.md){ .md-button }
 [查看学习路径](docs/learning-path.md){ .md-button }
 [浏览章节目录](chapters/README.md){ .md-button }
 
 <div class="section-note">
 本教材强调四件事同时成立：<strong>讲清直觉</strong>、<strong>配图辅助理解</strong>、<strong>给出 Python 小实验</strong>、<strong>用 LaTeX 正确呈现公式</strong>。
 </div>
+
+<p class="reading-tip">第一次进入本书时，建议先阅读“前言”，再按第 1 章到第 4 章的顺序推进。</p>
 
 ## 适合谁读
 

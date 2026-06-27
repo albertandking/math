@@ -7,7 +7,7 @@
   <p>这一章会把“单个数字”推进到“由多个特征组成的对象”，让你开始用向量来理解样本、距离和相似性。</p>
 </div>
 
-<div class="reading-focus">
+<div class="reading-focus" markdown="1">
 <strong>阅读重点</strong>
 
 - 先把向量理解成一组有顺序的数字，再逐步过渡到几何解释
