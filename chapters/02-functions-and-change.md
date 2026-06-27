@@ -1,5 +1,20 @@
 # 第 2 章 函数、图像与变化率
 
+<div class="chapter-intro">
+  <span class="chapter-pill">函数主线</span>
+  <span class="chapter-pill">变化率</span>
+  <span class="chapter-pill">导数前置</span>
+  <p>这一章要把“公式在描述什么”进一步推进到“这种关系究竟怎样变化，以及变化得快不快”。</p>
+</div>
+
+<div class="reading-focus">
+<strong>阅读重点</strong>
+
+- 先把函数理解成“输入到输出的规则”，不要只把它看成一个式子
+- 通过图像观察直线和曲线在变化方式上的差异
+- 把平均变化率理解成后面导数直觉的过渡台阶
+</div>
+
 ## 本章为什么重要
 
 如果说第 1 章解决的是“如何读懂公式”，那么这一章要解决的是另一个关键问题：
@@ -494,3 +509,18 @@ plt.show()
 - 接受“局部变化率”将通向导数这一事实
 
 这会为后续的向量、微积分和优化方法打下非常关键的桥梁。
+
+<div class="chapter-nav">
+  <a href="01-foundations.md">
+    <strong>上一章</strong>
+    回到第 1 章：数学准备与公式阅读
+  </a>
+  <a href="README.md">
+    <strong>章节目录</strong>
+    返回章节导航页
+  </a>
+  <a href="03-vectors-and-geometry.md">
+    <strong>下一章</strong>
+    进入第 3 章：向量与几何直觉
+  </a>
+</div>

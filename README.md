@@ -3,11 +3,9 @@
   <p>一套面向弱数学基础学习者的中文教材，用更直观的方式理解机器学习所需的数学。</p>
 </div>
 
-<div class="hero-actions">
-  <a class="md-button md-button--primary" href="chapters/01-foundations/">开始阅读</a>
-  <a class="md-button" href="docs/learning-path/">查看学习路径</a>
-  <a class="md-button" href="chapters/">浏览章节目录</a>
-</div>
+[开始阅读](chapters/01-foundations.md){ .md-button .md-button--primary }
+[查看学习路径](docs/learning-path.md){ .md-button }
+[浏览章节目录](chapters/README.md){ .md-button }
 
 <div class="section-note">
 本教材强调四件事同时成立：<strong>讲清直觉</strong>、<strong>配图辅助理解</strong>、<strong>给出 Python 小实验</strong>、<strong>用 LaTeX 正确呈现公式</strong>。
@@ -27,15 +25,13 @@
 
 ## 推荐入口
 
-<div class="grid cards" markdown>
-
 - :material-rocket-launch:{ .lg .middle } **从第一章开始**
 
   ---
 
   如果你希望按照教材顺序进入，优先从公式阅读与函数直觉开始。
 
-  [进入第一章](chapters/01-foundations/)
+  [进入第一章](chapters/01-foundations.md)
 
 - :material-map-outline:{ .lg .middle } **先看学习路径**
 
@@ -43,7 +39,7 @@
 
   如果你担心自己数学基础薄弱，建议先看完整学习路径再决定阅读顺序。
 
-  [查看学习路径](docs/learning-path/)
+  [查看学习路径](docs/learning-path.md)
 
 - :material-view-list:{ .lg .middle } **直接浏览目录**
 
@@ -51,7 +47,7 @@
 
   如果你已经有一定基础，可以直接从章节目录跳到想学的部分。
 
-  [章节目录](chapters/)
+  [章节目录](chapters/README.md)
 
 - :material-book-open-page-variant:{ .lg .middle } **了解教材设计**
 
@@ -59,13 +55,10 @@
 
   想知道这本书为什么这样组织、章节之间怎样衔接，可以先看教材总纲。
 
-  [教材总纲](docs/book-outline/)
-
-</div>
+  [教材总纲](docs/book-outline.md)
+{: .grid .cards}
 
 ## 教材特点
-
-<div class="grid cards" markdown>
 
 - **先讲直觉，再讲符号**
 
@@ -90,8 +83,7 @@
   ---
 
   从函数到向量，从矩阵到微积分，再到概率统计和模型理解，逐步推进。
-
-</div>
+{: .grid .cards}
 
 ## 当前阅读建议
 

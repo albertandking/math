@@ -1,5 +1,20 @@
 # 第 1 章 数学准备与公式阅读
 
+<div class="chapter-intro">
+  <span class="chapter-pill">起步章节</span>
+  <span class="chapter-pill">公式阅读</span>
+  <span class="chapter-pill">图像直觉</span>
+  <p>这一章先帮助你跨过“看到字母就紧张”的门槛，把公式读法、函数含义和图像直觉连接起来。</p>
+</div>
+
+<div class="reading-focus">
+<strong>阅读重点</strong>
+
+- 把字母看成“量的名字”，不要急着把它们当成难题
+- 把公式、表格和图像看作同一个关系的不同表达
+- 优先理解“一个量变化时，另一个量怎样跟着变化”
+</div>
+
 ## 本章为什么重要
 
 很多学生并不是完全学不会机器学习中的数学，而是卡在更前面的一步：看不懂公式到底在说什么。
@@ -410,3 +425,14 @@ z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b
 - 初步理解机器学习模型也可以看作函数
 
 如果这一章掌握得比较扎实，后面进入向量、导数、概率和优化时，理解难度会明显下降。
+
+<div class="chapter-nav">
+  <a href="README.md">
+    <strong>返回目录</strong>
+    回到章节目录页，重新选择阅读入口
+  </a>
+  <a href="02-functions-and-change.md">
+    <strong>下一章</strong>
+    进入第 2 章：函数、图像与变化率
+  </a>
+</div>

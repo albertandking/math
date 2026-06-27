@@ -41,6 +41,17 @@
   font-size: 0.78rem;
 }
 
+.md-typeset pre > code {
+  border-radius: 14px;
+}
+
+.md-typeset .highlight pre,
+.md-typeset pre {
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 10%, transparent);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
 .md-typeset img {
   display: block;
   margin: 1rem auto 1.4rem;
@@ -101,6 +112,84 @@
   color: var(--md-primary-fg-color);
   font-size: 0.72rem;
   font-weight: 700;
+}
+
+.chapter-intro {
+  margin: 0.4rem 0 1.3rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--book-radius);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--md-primary-fg-color) 11%, transparent),
+    color-mix(in srgb, var(--md-accent-fg-color) 8%, transparent)
+  );
+}
+
+.chapter-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.chapter-pill {
+  display: inline-block;
+  margin-right: 0.45rem;
+  margin-bottom: 0.45rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--md-default-fg-color) 8%, transparent);
+  font-size: 0.72rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.reading-focus {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem 1.1rem;
+  border-radius: var(--book-radius);
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 18%, transparent);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent);
+}
+
+.reading-focus p:last-child,
+.reading-focus ul:last-child {
+  margin-bottom: 0;
+}
+
+.chapter-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.9rem;
+  margin-top: 2.4rem;
+}
+
+.chapter-nav a {
+  display: block;
+  padding: 0.95rem 1rem;
+  border-radius: var(--book-radius);
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 14%, transparent);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, transparent);
+  color: inherit;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.chapter-nav a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.chapter-nav strong {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.md-typeset div.arithmatex {
+  margin: 1rem 0 1.4rem;
+  padding: 0.8rem 1rem;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--md-code-bg-color) 82%, white);
+  overflow-x: auto;
+}
+
+.md-typeset div.arithmatex mjx-container {
+  margin: 0 !important;
 }
 
 .reading-tip {

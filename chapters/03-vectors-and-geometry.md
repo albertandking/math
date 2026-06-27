@@ -1,5 +1,20 @@
 # 第 3 章 向量与几何直觉
 
+<div class="chapter-intro">
+  <span class="chapter-pill">向量入门</span>
+  <span class="chapter-pill">距离与方向</span>
+  <span class="chapter-pill">线性模型前置</span>
+  <p>这一章会把“单个数字”推进到“由多个特征组成的对象”，让你开始用向量来理解样本、距离和相似性。</p>
+</div>
+
+<div class="reading-focus">
+<strong>阅读重点</strong>
+
+- 先把向量看成一组有顺序的数字，再逐步接受它的几何意义
+- 同时保留“点”和“箭头”两种理解方式
+- 特别关注距离、长度和点积，它们会直接进入后续模型公式
+</div>
+
 ## 本章为什么重要
 
 在前两章里，我们主要讨论的是“一个输入如何影响一个输出”。但真实的机器学习问题里，输入往往不只是一个数字，而是一组数字。
@@ -547,3 +562,18 @@ w \cdot x + b
 - 接受机器学习数据中的一条样本记录通常就是一个向量
 
 这为下一章学习矩阵，以及后续理解线性模型、相似性和高维数据分析打下了基础。
+
+<div class="chapter-nav">
+  <a href="02-functions-and-change.md">
+    <strong>上一章</strong>
+    回到第 2 章：函数、图像与变化率
+  </a>
+  <a href="README.md">
+    <strong>章节目录</strong>
+    返回章节导航页
+  </a>
+  <a href="04-matrices-and-transformations.md">
+    <strong>下一章</strong>
+    进入第 4 章：矩阵与线性变换
+  </a>
+</div>
