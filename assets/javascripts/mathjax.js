@@ -1,3 +1,4 @@
+// Configure MathJax so MkDocs-rendered formulas are processed correctly.
 window.MathJax = {
   tex: {
     inlineMath: [["\\(", "\\)"]],

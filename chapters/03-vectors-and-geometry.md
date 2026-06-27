@@ -405,15 +405,18 @@ w_1x_1 + w_2x_2 + \cdots + w_nx_n
 ```python
 from math import sqrt
 
+# 计算向量 v 的长度。
 v = (3, 4)
 length = sqrt(v[0] ** 2 + v[1] ** 2)
 print("向量长度:", length)
 
+# 计算两点 a 和 b 之间的欧氏距离。
 a = (1, 2)
 b = (4, 6)
 distance = sqrt((b[0] - a[0]) ** 2 + (b[1] - a[1]) ** 2)
 print("两点距离:", distance)
 
+# 计算向量 x 和 w 的点积。
 x = (2, 3)
 w = (4, 5)
 dot_product = x[0] * w[0] + x[1] * w[1]
@@ -431,10 +434,14 @@ print("点积:", dot_product)
 下面是一个更贴近机器学习表达的版本：
 
 ```python
+# 一个样本的三个特征。
 features = (80, 12, 3)
+# 三个特征对应的权重。
 weights = (0.8, -0.2, 1.5)
+# 偏置项负责整体平移输出。
 bias = 10
 
+# 按照 w · x + b 的结构计算模型输出。
 score = (
     features[0] * weights[0]
     + features[1] * weights[1]

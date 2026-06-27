@@ -357,10 +357,13 @@ y = 0.8x + 50
 下面这段代码可以帮助你同时观察线性函数和二次函数的取值变化：
 
 ```python
+# 先准备几个离散的输入值。
 xs = [0, 1, 2, 3]
+# 分别计算线性函数和二次函数的输出。
 linear_values = [2 * x + 1 for x in xs]
 quadratic_values = [x * x for x in xs]
 
+# 把同一个输入下的两种输出并排打印，方便比较。
 for x, linear_value, quadratic_value in zip(xs, linear_values, quadratic_values):
     print(
         f"x = {x}, linear = {linear_value}, quadratic = {quadratic_value}"
@@ -371,11 +374,14 @@ for x, linear_value, quadratic_value in zip(xs, linear_values, quadratic_values)
 
 ```python
 def average_rate(x1: float, x2: float) -> float:
+    # 这里固定研究函数 y = x^2。
     y1 = x1 ** 2
     y2 = x2 ** 2
+    # 平均变化率 = 输出变化量 / 输入变化量。
     return (y2 - y1) / (x2 - x1)
 
 
+# 比较两个不同区间上的平均变化率。
 print(average_rate(1, 3))
 print(average_rate(2, 4))
 ```
@@ -387,10 +393,12 @@ print(average_rate(2, 4))
 ```python
 import matplotlib.pyplot as plt
 
+# 生成更细的横坐标，画出的曲线会更平滑。
 xs = [value / 10 for value in range(-20, 41)]
 linear_values = [2 * x + 1 for x in xs]
 quadratic_values = [x * x for x in xs]
 
+# 把两条函数曲线画到同一张图上进行比较。
 plt.plot(xs, linear_values, label="y = 2x + 1")
 plt.plot(xs, quadratic_values, label="y = x^2")
 plt.legend()

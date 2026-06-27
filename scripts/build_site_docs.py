@@ -18,6 +18,7 @@ def reset_directory(path: Path) -> None:
 
     :param path: Target directory path.
     """
+    # Rebuild from scratch so removed files do not linger in the generated docs tree.
     if path.exists():
         shutil.rmtree(path)
     path.mkdir(parents=True, exist_ok=True)
@@ -29,6 +30,7 @@ def copy_file(source: Path, target: Path) -> None:
     :param source: Source file path.
     :param target: Target file path.
     """
+    # Ensure the generated docs tree mirrors the source structure.
     target.parent.mkdir(parents=True, exist_ok=True)
     shutil.copy2(source, target)
 
@@ -39,6 +41,7 @@ def copy_directory(source: Path, target: Path) -> None:
     :param source: Source directory path.
     :param target: Target directory path.
     """
+    # Only copy optional folders when they exist in the project root.
     if source.exists():
         shutil.copytree(source, target, dirs_exist_ok=True)
 
@@ -48,8 +51,10 @@ def main() -> int:
 
     :return: Process exit code.
     """
+    # Start with a clean output directory for MkDocs source files.
     reset_directory(SITE_DOCS)
 
+    # Map the project authoring structure into the docs tree used by MkDocs.
     copy_file(ROOT / "README.md", SITE_DOCS / "index.md")
     copy_directory(ROOT / "chapters", SITE_DOCS / "chapters")
     copy_directory(ROOT / "docs", SITE_DOCS / "docs")
