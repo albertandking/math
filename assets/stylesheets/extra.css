@@ -1,15 +1,18 @@
 :root {
-  --book-max-width: 860px;
+  --book-max-width: 1040px;
+  --page-max-width: 1520px;
+  --md-sidebar-width: 13.2rem;
+  --md-sidebar-width--secondary: 10.2rem;
   --book-radius: 16px;
 }
 
 .md-content__inner,
 .md-grid {
-  max-width: 1200px;
+  max-width: var(--page-max-width);
 }
 
 .md-content article {
-  max-width: var(--book-max-width);
+  max-width: min(100%, var(--book-max-width));
   margin: 0 auto;
 }
 
