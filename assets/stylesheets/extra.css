@@ -140,6 +140,34 @@
   color: var(--md-default-fg-color--light);
 }
 
+.md-typeset .lv-core,
+.md-typeset .lv-ext,
+.md-typeset .lv-adv {
+  display: inline-block;
+  margin-left: 0.45rem;
+  padding: 0.08rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+}
+
+.md-typeset .lv-core {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 16%, transparent);
+  color: var(--md-primary-fg-color);
+}
+
+.md-typeset .lv-ext {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 16%, transparent);
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset .lv-adv {
+  background: color-mix(in srgb, var(--md-default-fg-color) 12%, transparent);
+  color: var(--md-default-fg-color--light);
+}
+
 .reading-focus {
   margin: 1rem 0 1.5rem;
   padding: 1rem 1.1rem;
