@@ -1,0 +1,46 @@
+site_name: 机器学习数学教材
+site_description: 面向机器学习初学者的中文数学学习教材
+site_url: https://albertandking.github.io/math/
+repo_name: albertandking/math
+repo_url: https://github.com/albertandking/math
+
+docs_dir: site_docs
+site_dir: site
+use_directory_urls: true
+
+exclude_docs: |
+  .*
+
+theme:
+  name: mkdocs
+  language: zh
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 首页: index.md
+  - 教材总览:
+      - 教材总纲: docs/book-outline.md
+      - 学习路径: docs/learning-path.md
+      - 配图与举例规范: docs/visual-guidelines.md
+      - 章节目录: chapters/README.md
+  - 正文:
+      - 第 1 章 数学准备与公式阅读: chapters/01-foundations.md
+      - 第 2 章 函数、图像与变化率: chapters/02-functions-and-change.md
+      - 第 3 章 向量与几何直觉: chapters/03-vectors-and-geometry.md
+      - 第 4 章 矩阵与线性变换: chapters/04-matrices-and-transformations.md
+      - 第 5 章 特征值、特征向量与奇异值分解: chapters/05-eigenvalues-and-svd.md
+      - 第 6 章 一元微积分基础: chapters/06-single-variable-calculus.md
+      - 第 7 章 多元微积分与梯度: chapters/07-multivariable-calculus.md
+      - 第 8 章 优化方法: chapters/08-optimization.md
+      - 第 9 章 概率论基础: chapters/09-probability-basics.md
+      - 第 10 章 随机变量与常见分布: chapters/10-random-variables-and-distributions.md
+      - 第 11 章 统计学基础与估计: chapters/11-statistics-and-inference.md
+      - 第 12 章 线性模型中的数学: chapters/12-linear-models.md
+      - 第 13 章 神经网络的数学基础: chapters/13-neural-network-math.md
+      - 第 14 章 通过模型复盘数学: chapters/14-math-review-through-models.md
