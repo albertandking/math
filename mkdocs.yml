@@ -10,16 +10,21 @@ use_directory_urls: true
 
 exclude_docs: |
   .*
+  assets/**/README.md
 
 theme:
   name: material
   language: zh
   features:
+    - navigation.instant
     - navigation.tabs
     - navigation.sections
+    - navigation.expand
     - navigation.top
+    - navigation.tracking
     - toc.follow
     - content.code.copy
+    - content.tabs.link
     - search.suggest
     - search.highlight
   palette:
@@ -41,11 +46,17 @@ theme:
 markdown_extensions:
   - admonition
   - attr_list
+  - md_in_html
   - tables
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.details
+  - pymdownx.superfences
   - toc:
       permalink: true
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 extra_javascript:
   - assets/javascripts/mathjax.js

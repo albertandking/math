@@ -1,35 +1,105 @@
-# 机器学习数学教材
+<div class="hero">
+  <h1>机器学习数学教材</h1>
+  <p>一套面向弱数学基础学习者的中文教材，用更直观的方式理解机器学习所需的数学。</p>
+</div>
 
-本项目用于构建一套面向初学者的机器学习数学教材。
+<div class="hero-actions">
+  <a class="md-button md-button--primary" href="chapters/01-foundations/">开始阅读</a>
+  <a class="md-button" href="docs/learning-path/">查看学习路径</a>
+  <a class="md-button" href="chapters/">浏览章节目录</a>
+</div>
 
-## 面向读者
+<div class="section-note">
+本教材强调四件事同时成立：<strong>讲清直觉</strong>、<strong>配图辅助理解</strong>、<strong>给出 Python 小实验</strong>、<strong>用 LaTeX 正确呈现公式</strong>。
+</div>
 
-- 数学基础较弱，尤其缺少中国大学数学系统训练的学生
+## 适合谁读
+
+- 数学基础较弱，尤其缺少系统大学数学训练的学生
 - 想学机器学习，但一看到公式就容易畏难的自学者
 - 希望先建立直觉、再逐步进入形式化表达的读者
 
-## 核心目标
+## 你会得到什么
 
-构建一条从“害怕数学”到“能理解机器学习模型背后的数学”的学习路径。
+- 从“看不懂公式”过渡到“能读懂模型表达”
+- 从单个变量过渡到向量、矩阵、梯度和概率
+- 通过图示、代码和小例子，把抽象数学变成可观察的对象
 
-教材将坚持以下原则：
+## 推荐入口
 
-- 先讲直觉，再讲符号和公式
-- 采用小步推进，避免一开始就高强度定理化压缩讲述
-- 每个重要数学概念都尽量连接到机器学习场景
-- 区分“必须掌握”和“进阶扩展”
-- 降低对传统大学数学先修课程的依赖
+<div class="grid cards" markdown>
 
-## 当前结构
+- :material-rocket-launch:{ .lg .middle } **从第一章开始**
 
-- `docs/book-outline.md`：教材定位、章节地图、写作原则
-- `docs/learning-path.md`：面向弱基础学生的学习路径设计
-- `docs/visual-guidelines.md`：配图与举例规范
-- `chapters/README.md`：教材正文目录与统一模板
-- `chapters/01-foundations.md`：第一章详细初稿
-- `chapters/02-14`：其余章节的中文占位骨架
+  ---
 
-## 建议章节序列
+  如果你希望按照教材顺序进入，优先从公式阅读与函数直觉开始。
+
+  [进入第一章](chapters/01-foundations/)
+
+- :material-map-outline:{ .lg .middle } **先看学习路径**
+
+  ---
+
+  如果你担心自己数学基础薄弱，建议先看完整学习路径再决定阅读顺序。
+
+  [查看学习路径](docs/learning-path/)
+
+- :material-view-list:{ .lg .middle } **直接浏览目录**
+
+  ---
+
+  如果你已经有一定基础，可以直接从章节目录跳到想学的部分。
+
+  [章节目录](chapters/)
+
+- :material-book-open-page-variant:{ .lg .middle } **了解教材设计**
+
+  ---
+
+  想知道这本书为什么这样组织、章节之间怎样衔接，可以先看教材总纲。
+
+  [教材总纲](docs/book-outline/)
+
+</div>
+
+## 教材特点
+
+<div class="grid cards" markdown>
+
+- **先讲直觉，再讲符号**
+
+  ---
+
+  优先帮助你理解公式在描述什么，再进入形式化表达。
+
+- **每章尽量配图**
+
+  ---
+
+  函数、向量、距离、变化率、梯度等抽象概念都会尽量给出图示。
+
+- **每章尽量有 Python 小实验**
+
+  ---
+
+  让读者通过可执行代码观察数值变化，而不是只停留在静态定义上。
+
+- **章节之间有明确主线**
+
+  ---
+
+  从函数到向量，从矩阵到微积分，再到概率统计和模型理解，逐步推进。
+
+</div>
+
+## 当前阅读建议
+
+<span class="chapter-badge">推荐顺序</span> 第 1 章 -> 第 2 章 -> 第 3 章 -> 第 4 章
+
+<p class="reading-tip">如果你是第一次系统学习机器学习数学，这四章构成最关键的起步阶段。</p>
+
+## 章节主线
 
 1. 数学准备与公式阅读
 2. 函数、图像与变化率
@@ -44,28 +114,9 @@
 11. 特征值、奇异值分解与降维
 12. 神经网络中的数学基础
 
-## 每章建议结构
+## 站点说明
 
-- 学习目标
-- 先修知识检查
-- 直觉解释
-- 核心定义
-- 例题与推导
-- 配图建议
-- 机器学习联系
-- 练习题
-- 小结与常见误区
-
-## 下一步
-
-项目已经可以按教材方式逐章迭代。比较务实的推进顺序是优先完成前四章，因为它们构成了后续学习机器学习数学的最小基础。
-
-## 在线浏览
-
-项目已配置为可通过 GitHub Pages 发布。
-
+- 在线阅读地址：`https://albertandking.github.io/math/`
 - 本地预览命令：`uv run python scripts/build_site_docs.py` 后执行 `uv run mkdocs serve`
 - 静态构建命令：`uv run python scripts/build_site_docs.py` 后执行 `uv run mkdocs build --strict`
 - GitHub Actions 工作流：`.github/workflows/deploy-pages.yml`
-
-推送到 GitHub 的 `main` 分支后，即可通过 Pages 在线浏览站点。
