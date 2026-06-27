@@ -318,6 +318,72 @@ y = 0.8x + 50
 
 这说明函数不仅是课堂中的数学对象，也是最简单预测模型的表达方式。
 
+## 图示理解
+
+先看下面这张函数对比图：
+
+![线性函数与二次函数对比图](../assets/figures/ch02_linear_vs_quadratic.png)
+
+这张图最重要的不是“看公式长什么样”，而是看它们的变化方式有什么不同：
+
+- `y = 2x + 1` 是直线，说明变化率稳定
+- `y = x^2` 是曲线，说明变化快慢会随着位置不同而变化
+- 当 `x` 变大时，二次函数的增长越来越明显
+
+再看平均变化率的图：
+
+![平均变化率图示](../assets/figures/ch02_average_rate.png)
+
+这里曲线上的两个点 `A` 和 `B` 被一条割线连接起来。割线的斜率，就是区间上的平均变化率。
+
+这一步很关键，因为后面学习导数时，你会从“区间上的割线”继续走向“某一点附近的切线”。
+
+## Python 小实验
+
+下面这段代码可以帮助你同时观察线性函数和二次函数的取值变化：
+
+```python
+xs = [0, 1, 2, 3]
+linear_values = [2 * x + 1 for x in xs]
+quadratic_values = [x * x for x in xs]
+
+for x, linear_value, quadratic_value in zip(xs, linear_values, quadratic_values):
+    print(
+        f"x = {x}, linear = {linear_value}, quadratic = {quadratic_value}"
+    )
+```
+
+如果你想直接用 Python 计算平均变化率，可以写成：
+
+```python
+def average_rate(x1: float, x2: float) -> float:
+    y1 = x1 ** 2
+    y2 = x2 ** 2
+    return (y2 - y1) / (x2 - x1)
+
+
+print(average_rate(1, 3))
+print(average_rate(2, 4))
+```
+
+这段代码能帮助你观察到一个重要事实：对于 `y = x^2` 这种曲线函数，不同区间上的平均变化率可能不同。
+
+如果你已经愿意多走一步，还可以用 `matplotlib` 自己把图画出来：
+
+```python
+import matplotlib.pyplot as plt
+
+xs = [value / 10 for value in range(-20, 41)]
+linear_values = [2 * x + 1 for x in xs]
+quadratic_values = [x * x for x in xs]
+
+plt.plot(xs, linear_values, label="y = 2x + 1")
+plt.plot(xs, quadratic_values, label="y = x^2")
+plt.legend()
+plt.grid(True, linestyle="--", alpha=0.3)
+plt.show()
+```
+
 ## 配图建议
 
 本章建议至少配四张图：
