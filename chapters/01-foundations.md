@@ -384,12 +384,13 @@ z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b
 更进一步地说，本章的价值并不只体现在本章本身，而体现在它为整本书打下的阅读基础。后面无论进入向量、矩阵、导数、概率还是优化，只要读者已经在本章里建立了对数学表达的基本信心，后续内容的理解难度都会明显下降。
 
 <div class="chapter-nav">
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页，重新选择阅读入口
   </a>
-  <a href="02-functions-and-change.md">
+  <a href="../02-functions-and-change/">
     <strong>下一章</strong>
     进入第 2 章：函数、图像与变化率
   </a>
 </div>
+

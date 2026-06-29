@@ -287,16 +287,17 @@ for _ in range(5):
 在此基础上，抽样误差提醒我们样本结论天然带有波动，而泛化误差则把这个统计问题直接带进机器学习：模型在训练样本上表现好，不代表它对总体也同样有效。本章最后真正希望读者带走的，是这样一个稳定认识：机器学习不仅在优化模型，也在用有限样本对更大的数据世界做统计推断。
 
 <div class="chapter-nav">
-  <a href="10-random-variables-and-distributions.md">
+  <a href="../10-random-variables-and-distributions/">
     <strong>上一章</strong>
     回到第 10 章：随机变量与常见分布
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="12-linear-models.md">
+  <a href="../12-linear-models/">
     <strong>下一章</strong>
     进入第 12 章：线性模型中的数学
   </a>
 </div>
+

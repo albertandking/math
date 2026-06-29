@@ -363,16 +363,17 @@ print("P(偶数 | 点数大于3) 的经验估计:", simulate_conditional_probabi
 在此基础上，全概率公式和贝叶斯公式进一步告诉我们：复杂的概率问题可以在不同情形之间拆开考虑，也可以在观察到结果之后反向更新原因的判断。本章最后真正希望读者留下的，并不是几道概率题的技巧，而是一个稳定的核心观念：现实中的很多问题天然带有不确定性，而概率论正是在为这种不确定性提供可计算、可解释、可更新的表达方式。
 
 <div class="chapter-nav">
-  <a href="08-optimization.md">
+  <a href="../08-optimization/">
     <strong>上一章</strong>
     回到第 8 章：优化与梯度下降
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="10-random-variables-and-distributions.md">
+  <a href="../10-random-variables-and-distributions/">
     <strong>下一章</strong>
     进入第 10 章：随机变量与常见分布
   </a>
 </div>
+

@@ -315,16 +315,17 @@ print(f"更新结束后的损失: {loss_function(weight):.6f}")
 在此基础上，学习率告诉我们每一步要走多大，局部最优与全局最优提醒我们训练地形并不总是理想。本章最后真正希望读者带走的，并不是一串优化器名称，而是一个稳定的核心观念：机器学习训练本质上是在复杂地形中做逐步下降，而梯度和学习率就是这场下降过程的两把关键工具。
 
 <div class="chapter-nav">
-  <a href="07-multivariable-calculus.md">
+  <a href="../07-multivariable-calculus/">
     <strong>上一章</strong>
     回到第 7 章：多元微积分与梯度
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="09-probability-basics.md">
+  <a href="../09-probability-basics/">
     <strong>下一章</strong>
     进入第 9 章：概率论基础
   </a>
 </div>
+

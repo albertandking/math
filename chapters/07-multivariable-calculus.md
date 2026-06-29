@@ -407,16 +407,17 @@ print("函数值变化:", new_value - value_at_point)
 在此基础上，链式法则进一步告诉我们：变化率不仅能在单层函数里计算，还能沿着复合结构逐步传播。这一点会直接通向后续优化方法和神经网络训练。本章最后真正希望读者建立起来的，不是对所有多元求导技巧的机械记忆，而是这样一个稳定认识：一旦函数依赖多个变量，我们就必须按方向来理解局部变化，而梯度正是把这种方向信息统一起来的语言。
 
 <div class="chapter-nav">
-  <a href="06-single-variable-calculus.md">
+  <a href="../06-single-variable-calculus/">
     <strong>上一章</strong>
     回到第 6 章：一元微积分基础
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="08-optimization.md">
+  <a href="../08-optimization/">
     <strong>下一章</strong>
     进入第 8 章：优化与梯度下降
   </a>
 </div>
+

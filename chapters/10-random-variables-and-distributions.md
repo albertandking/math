@@ -338,16 +338,17 @@ print("前 10 个高斯样本:", gaussian_samples[:10])
 在此基础上，伯努利分布、二项分布和正态分布提供了三类最常见的结构模板：二元结果、重复试验中的成功次数以及连续波动。本章最后真正希望读者建立起来的，并不是对一连串公式的机械记忆，而是这样一个稳定观念：不确定性不仅可以用事件概率描述，也可以被组织成随机变量、平均水平、波动程度和整体分布这整套更强大的数学语言。
 
 <div class="chapter-nav">
-  <a href="09-probability-basics.md">
+  <a href="../09-probability-basics/">
     <strong>上一章</strong>
     回到第 9 章：概率论基础
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="11-statistics-and-inference.md">
+  <a href="../11-statistics-and-inference/">
     <strong>下一章</strong>
     进入第 11 章：统计学基础与估计
   </a>
 </div>
+

@@ -540,16 +540,17 @@ x =
 进一步说，矩阵乘向量把“多次点积”收束成一次整体运算，线性变换则把这种运算重新解释为空间中的投影、旋转、拉伸与压缩。对第一次学习的人来说，本章真正需要带走的，不只是矩阵乘法的步骤，而是一个稳定认识：后面频繁出现的 \(XW\)、\(Wx+b\)、线性层、投影和降维，本来就是矩阵语言在不同场景中的自然延伸。只要本章基础扎实，后续进入特征值、奇异值分解、线性模型和神经网络时，阅读负担就会明显下降。
 
 <div class="chapter-nav">
-  <a href="03-vectors-and-geometry.md">
+  <a href="../03-vectors-and-geometry/">
     <strong>上一章</strong>
     回到第 3 章：向量与几何直觉
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="05-eigenvalues-and-svd.md">
+  <a href="../05-eigenvalues-and-svd/">
     <strong>下一章</strong>
     进入第 5 章：特征值、特征向量与奇异值分解
   </a>
 </div>
+

@@ -316,16 +316,17 @@ print(f"两者差值 = {real_value - linear_approximation}")
 在此基础上，我们进一步看到：导数既能用切线斜率来解释，也能帮助我们判断上升、下降和极值位置；更重要的是，它还能把复杂函数在局部看成一条近似直线。这些认识会直接通向后面的多元微积分和优化方法。本章最后真正希望读者留下的，并不是一串求导技巧，而是一个稳定的核心观念：想理解函数如何在局部变化，就必须学会看导数。
 
 <div class="chapter-nav">
-  <a href="05-eigenvalues-and-svd.md">
+  <a href="../05-eigenvalues-and-svd/">
     <strong>上一章</strong>
     回到第 5 章：特征值、特征向量与奇异值分解
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="07-multivariable-calculus.md">
+  <a href="../07-multivariable-calculus/">
     <strong>下一章</strong>
     进入第 7 章：多元微积分与梯度
   </a>
 </div>
+

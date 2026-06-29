@@ -368,16 +368,17 @@ print("L2 正则项:", regularization)
 在此基础上，正则化进一步把统计学中的泛化思想写进了模型训练过程本身。本章最后真正希望读者带走的，不只是线性回归或逻辑回归这些名称，而是一个稳定的核心认识：特征表示、参数学习、损失设计、概率解释和泛化控制，本来就是同一套模型框架中的不同侧面。
 
 <div class="chapter-nav">
-  <a href="11-statistics-and-inference.md">
+  <a href="../11-statistics-and-inference/">
     <strong>上一章</strong>
     回到第 11 章：统计学基础与估计
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="13-neural-network-math.md">
+  <a href="../13-neural-network-math/">
     <strong>下一章</strong>
     进入第 13 章：神经网络的数学基础
   </a>
 </div>
+

@@ -375,16 +375,17 @@ print("对 b1 的梯度:", d_loss_d_b1)
 从整本书的角度看，本章也是一次重要综合：向量、矩阵、函数、导数、优化和概率解释，都会在神经网络中重新出现。本章最后真正希望读者建立起来的，并不是对某一类网络实现细节的机械记忆，而是这样一个稳定认识：深度学习的复杂外观之下，仍然是前面学过的数学在更大规模上的协调运作。
 
 <div class="chapter-nav">
-  <a href="12-linear-models.md">
+  <a href="../12-linear-models/">
     <strong>上一章</strong>
     回到第 12 章：线性模型中的数学
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="14-math-review-through-models.md">
+  <a href="../14-math-review-through-models/">
     <strong>下一章</strong>
     进入第 14 章：通过模型复盘数学
   </a>
 </div>
+

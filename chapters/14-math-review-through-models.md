@@ -289,16 +289,17 @@ print("更新后的偏置:", bias)
 对整本书来说，本章最后真正希望读者带走的，并不是新的公式，而是一种更高层次的定位能力：看到一个模型时，能够判断它在调用哪些数学对象、这些对象之间如何连接，以及自己应该回到哪条主线去补基础。只要这种能力建立起来，这本书就不只是“读完了”，而是真正开始转化为你后续继续学习的工具。
 
 <div class="chapter-nav">
-  <a href="13-neural-network-math.md">
+  <a href="../13-neural-network-math/">
     <strong>上一章</strong>
     回到第 13 章：神经网络的数学基础
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="../README.md">
+  <a href="../../">
     <strong>返回首页</strong>
     回到全书总览页
   </a>
 </div>
+

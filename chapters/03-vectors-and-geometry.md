@@ -533,16 +533,17 @@ w \cdot x + b
 在此基础上，长度、距离和点积又进一步把“整体表示”推进为“整体计算”。长度和距离帮助我们判断对象有多大、彼此有多近，点积则让多个特征的共同作用可以被压缩成一个统一的加权结果。对第一次学习的人来说，本章真正需要带走的，不只是向量加法或数乘的计算规则，而是一个稳定的核心直觉：机器学习中的一条样本、一个特征向量、一次线性打分，本质上都建立在向量这种整体表示方式之上。这也正是下一章进入矩阵表达以及后续理解线性模型、高维数据分析和相似性计算的基础。
 
 <div class="chapter-nav">
-  <a href="02-functions-and-change.md">
+  <a href="../02-functions-and-change/">
     <strong>上一章</strong>
     回到第 2 章：函数、图像与变化率
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="04-matrices-and-transformations.md">
+  <a href="../04-matrices-and-transformations/">
     <strong>下一章</strong>
     进入第 4 章：矩阵与线性变换
   </a>
 </div>
+

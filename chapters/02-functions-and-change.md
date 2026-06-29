@@ -456,16 +456,17 @@ plt.show()
 在这个基础上，变化率的引入又把本章向后推进了一步。平均变化率帮助我们从整体区间观察变化快慢，局部变化率则把注意力进一步集中到某一点附近的细微变化，这正是后续导数思想的入口。对第一次学习的人来说，本章真正需要带走的，不只是自变量、因变量或图像读法这些局部知识，而是一种更重要的认识：如果想理解机器学习中的预测函数、损失函数和训练过程，就必须先学会用“函数与变化”的语言来观察世界。
 
 <div class="chapter-nav">
-  <a href="01-foundations.md">
+  <a href="../01-foundations/">
     <strong>上一章</strong>
     回到第 1 章：数学准备与公式阅读
   </a>
-  <a href="README.md">
+  <a href="../">
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="03-vectors-and-geometry.md">
+  <a href="../03-vectors-and-geometry/">
     <strong>下一章</strong>
     进入第 3 章：向量与几何直觉
   </a>
 </div>
+
