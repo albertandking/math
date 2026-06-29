@@ -4,9 +4,9 @@
 </div>
 
 [开始阅读](chapters/01-foundations.md){ .md-button .md-button--primary }
-[阅读前言](docs/preface.md){ .md-button }
-[查看学习路径](docs/learning-path.md){ .md-button }
-[浏览章节目录](chapters/README.md){ .md-button }
+[先读前言](docs/preface.md){ .md-button }
+[先看路径](docs/learning-path.md){ .md-button }
+[按目录选读](chapters/README.md){ .md-button }
 
 <div class="section-note">
 本教材希望把“能读懂公式”和“能理解模型”放在同一条学习路径里推进。整本书会尽量同时做到：<strong>先讲清直觉</strong>、<strong>再用图示帮助理解</strong>、<strong>再用 Python 小实验观察现象</strong>、<strong>最后把关键关系稳定地写成 LaTeX 公式</strong>。
@@ -26,7 +26,7 @@
 - 从单个变量过渡到向量、矩阵、梯度和概率
 - 通过图示、代码和小例子，把抽象数学变成可观察的对象
 
-## 推荐入口
+## 从这里开始
 
 - :material-rocket-launch:{ .lg .middle } **从第一章开始**
 
@@ -34,7 +34,7 @@
 
   如果你希望按照教材顺序进入，最稳妥的方式是先从公式阅读与函数直觉开始，再逐步进入向量和矩阵。
 
-  [进入第一章](chapters/01-foundations.md)
+  [进入第 1 章](chapters/01-foundations.md)
 
 - :material-map-outline:{ .lg .middle } **先看学习路径**
 
@@ -42,15 +42,15 @@
 
   如果你担心自己基础不稳，建议先看完整学习路径，明确“先学什么、为什么先学、后面怎样衔接”之后再进入正文。
 
-  [查看学习路径](docs/learning-path.md)
+  [进入学习路径](docs/learning-path.md)
 
-- :material-view-list:{ .lg .middle } **直接浏览目录**
+- :material-view-list:{ .lg .middle } **按目录选读**
 
   ---
 
   如果你已经具备一些函数、向量或概率基础，可以先浏览章节目录，再按自己的问题跳到最需要的部分。
 
-  [章节目录](chapters/README.md)
+  [进入章节目录](chapters/README.md)
 
 - :material-book-open-page-variant:{ .lg .middle } **了解教材设计**
 
@@ -58,10 +58,10 @@
 
   如果你想先理解这本书为什么这样组织、章节之间怎样衔接、每章分别承担什么作用，可以先看教材总纲。
 
-  [教材总纲](docs/book-outline.md)
+  [查看教材总纲](docs/book-outline.md)
 {: .grid .cards}
 
-## 教材特点
+## 这本书怎么讲
 
 - **先讲直觉，再讲符号**
 
@@ -69,17 +69,17 @@
 
   优先帮助你理解公式在描述什么，再进入形式化表达。
 
-- **每章尽量配图**
+- **尽量先图示，再抽象**
 
   ---
 
-  函数、向量、距离、变化率、梯度等抽象概念都会尽量给出图示。
+  函数、向量、距离、变化率、梯度等抽象概念都会尽量先用图示建立直觉。
 
-- **每章尽量有 Python 小实验**
+- **尽量先观察，再下定义**
 
   ---
 
-  让读者通过可执行代码观察数值变化，而不是只停留在静态定义上。
+  让读者通过可执行代码观察数值变化，再回到定义、公式与推导。
 
 - **章节之间有明确主线**
 
@@ -88,7 +88,7 @@
   从函数到向量，从矩阵到微积分，再到概率统计和模型理解，逐步推进。
 {: .grid .cards}
 
-## 当前阅读建议
+## 第一次阅读建议
 
 <span class="chapter-badge">推荐顺序</span> 第 1 章 -> 第 2 章 -> 第 3 章 -> 第 4 章
 
