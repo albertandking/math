@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Outer product gradient for a linear layer</title>
+  <desc id="desc">The output error vector and input vector combine as an outer product to form a weight gradient matrix.</desc>
+  <rect width="760" height="520" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="56" y="56" font-size="28" font-weight="bold">The weight gradient is an outer product because every output error meets every input component</text>
+    <text x="56" y="86" font-size="19">dL/dy gives row-wise error strength. x^T gives column-wise input participation. Their outer product fills the whole matrix.</text>
+  </g>
+
+  <g fill="#eef2ff" stroke="#7c3aed" stroke-width="3">
+    <rect x="74" y="156" width="86" height="168" rx="16"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="117" y="188" text-anchor="middle">dL/dy</text>
+  </g>
+  <g fill="#7c3aed" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold">
+    <text x="117" y="242" text-anchor="middle">1</text>
+    <text x="117" y="298" text-anchor="middle">2</text>
+  </g>
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <text x="92" y="354">one error</text>
+    <text x="92" y="376">per output row</text>
+  </g>
+
+  <g fill="#eefbf3" stroke="#2f855a" stroke-width="3">
+    <rect x="226" y="214" width="190" height="66" rx="16"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="321" y="204" text-anchor="middle">x^T</text>
+  </g>
+  <g fill="#2f855a" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold">
+    <text x="280" y="256" text-anchor="middle">3</text>
+    <text x="360" y="256" text-anchor="middle">1</text>
+  </g>
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <text x="248" y="314">one input factor</text>
+    <text x="248" y="336">per weight column</text>
+  </g>
+
+  <g stroke="#d97706" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="166" y1="240" x2="220" y2="240"/>
+    <polyline points="202,224 224,240 202,256"/>
+    <line x1="422" y1="240" x2="470" y2="240"/>
+    <polyline points="452,224 474,240 452,256"/>
+  </g>
+
+  <g fill="#fff7ed" stroke="#f59e0b" stroke-width="3">
+    <rect x="488" y="156" width="196" height="168" rx="16"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="586" y="188" text-anchor="middle">dL/dW</text>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold">
+    <text x="542" y="238" text-anchor="middle">3</text>
+    <text x="628" y="238" text-anchor="middle">1</text>
+    <text x="542" y="294" text-anchor="middle">6</text>
+    <text x="628" y="294" text-anchor="middle">2</text>
+  </g>
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="17">
+    <text x="516" y="352">row 1 = 1 × [3, 1]</text>
+    <text x="516" y="376">row 2 = 2 × [3, 1]</text>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="74" y="444">Each output-row error scales the whole input row once, so the weight gradient naturally becomes a full matrix rather than a vector.</text>
+    <text x="74" y="474">This is exactly why dL/dW = (dL/dy) x^T is an outer product.</text>
+  </g>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Bias variance tradeoff</title>
+  <desc id="desc">Bias decreases while variance increases with model complexity, and their sum forms a U-shaped total error curve.</desc>
+  <rect width="760" height="520" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="62" y="56" font-size="28" font-weight="bold">Bias and variance move in opposite directions as complexity grows</text>
+    <text x="62" y="86" font-size="19">The total error often has a middle sweet spot because low bias and low variance rarely happen at the same extreme.</text>
+  </g>
+
+  <g stroke="#d9e2ec" stroke-width="1.5">
+    <line x1="108" y1="410" x2="676" y2="410"/>
+    <line x1="108" y1="338" x2="676" y2="338"/>
+    <line x1="108" y1="266" x2="676" y2="266"/>
+    <line x1="108" y1="194" x2="676" y2="194"/>
+    <line x1="108" y1="122" x2="676" y2="122"/>
+  </g>
+  <g stroke="#102a43" stroke-width="2.5">
+    <line x1="108" y1="430" x2="108" y2="116"/>
+    <line x1="108" y1="410" x2="676" y2="410"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="598" y="456">model complexity</text>
+    <text x="58" y="136">error</text>
+  </g>
+
+  <g fill="none" stroke="#3366cc" stroke-width="5">
+    <path d="M 122 162 C 208 182, 286 224, 354 278 C 424 332, 514 366, 662 392"/>
+  </g>
+  <g fill="#3366cc" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="124" y="148">variance</text>
+  </g>
+
+  <g fill="none" stroke="#7c3aed" stroke-width="5">
+    <path d="M 122 382 C 194 332, 262 276, 332 224 C 406 170, 500 142, 662 128"/>
+  </g>
+  <g fill="#7c3aed" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="588" y="120">bias</text>
+  </g>
+
+  <g fill="none" stroke="#d97706" stroke-width="5">
+    <path d="M 122 260 C 194 224, 250 196, 314 188 C 386 180, 458 196, 538 244 C 594 278, 636 330, 664 384"/>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="498" y="226">total error</text>
+  </g>
+
+  <g stroke="#d97706" stroke-width="3.5" stroke-dasharray="8 7">
+    <line x1="352" y1="410" x2="352" y2="184"/>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold">
+    <text x="366" y="204">sweet spot</text>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="130" y="440">too simple:</text>
+    <text x="130" y="464">high bias, low variance</text>
+    <text x="500" y="440">too complex:</text>
+    <text x="500" y="464">low bias, high variance</text>
+  </g>
+</svg>

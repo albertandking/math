@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Convolution sliding windows</title>
+  <desc id="desc">A one-dimensional convolution kernel scans successive windows of a short input sequence and produces local weighted sums.</desc>
+  <rect width="760" height="520" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="58" y="56" font-size="28" font-weight="bold">Convolution repeats the same local calculation as the window slides</text>
+    <text x="58" y="86" font-size="19">The kernel does not relearn new parameters for each position. It reuses the same weights on each neighboring window.</text>
+  </g>
+
+  <g fill="#f8fbff" stroke="#bfd3e6" stroke-width="2.5">
+    <rect x="58" y="126" width="644" height="282" rx="18"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="94" y="168">input x = [2, 1, 3, 0, 1]</text>
+    <text x="492" y="168">kernel w = [1, -1]</text>
+  </g>
+
+  <g fill="#eef2ff" stroke="#7c3aed" stroke-width="2.5">
+    <rect x="118" y="204" width="74" height="74" rx="10"/>
+    <rect x="192" y="204" width="74" height="74" rx="10"/>
+    <rect x="266" y="204" width="74" height="74" rx="10"/>
+    <rect x="340" y="204" width="74" height="74" rx="10"/>
+    <rect x="414" y="204" width="74" height="74" rx="10"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold">
+    <text x="155" y="252" text-anchor="middle">2</text>
+    <text x="229" y="252" text-anchor="middle">1</text>
+    <text x="303" y="252" text-anchor="middle">3</text>
+    <text x="377" y="252" text-anchor="middle">0</text>
+    <text x="451" y="252" text-anchor="middle">1</text>
+  </g>
+
+  <g fill="none" stroke="#d97706" stroke-width="5">
+    <rect x="116" y="202" width="150" height="78" rx="12"/>
+    <rect x="190" y="202" width="150" height="78" rx="12"/>
+    <rect x="264" y="202" width="150" height="78" rx="12"/>
+    <rect x="338" y="202" width="150" height="78" rx="12"/>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="120" y="316">window 1: [2, 1] -> 2×1 + 1×(-1) = 1</text>
+    <text x="120" y="344">window 2: [1, 3] -> 1×1 + 3×(-1) = -2</text>
+    <text x="120" y="372">window 3: [3, 0] -> 3×1 + 0×(-1) = 3</text>
+    <text x="120" y="400">window 4: [0, 1] -> 0×1 + 1×(-1) = -1</text>
+  </g>
+
+  <g fill="#e6fffa" stroke="#2f855a" stroke-width="2.5">
+    <rect x="564" y="208" width="62" height="62" rx="10"/>
+    <rect x="626" y="208" width="62" height="62" rx="10"/>
+    <rect x="564" y="270" width="62" height="62" rx="10"/>
+    <rect x="626" y="270" width="62" height="62" rx="10"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold">
+    <text x="596" y="247" text-anchor="middle">1</text>
+    <text x="658" y="247" text-anchor="middle">-2</text>
+    <text x="596" y="309" text-anchor="middle">3</text>
+    <text x="658" y="309" text-anchor="middle">-1</text>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="566" y="360">output feature map</text>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="58" y="468">The same two weights are reused on every neighboring pair, so convolution is a local linear rule applied again and again as the window moves.</text>
+  </g>
+</svg>
