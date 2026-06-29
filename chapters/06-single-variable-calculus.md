@@ -1,6 +1,6 @@
 # 第 6 章 一元微积分基础
 
-<div class="chapter-intro">
+<div class="chapter-intro" markdown="1">
   <span class="chapter-pill">导数入门</span>
   <span class="chapter-pill">局部变化</span>
   <span class="chapter-pill">优化前置</span>

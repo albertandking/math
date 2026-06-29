@@ -1,6 +1,6 @@
 # 第 1 章 数学准备与公式阅读
 
-<div class="chapter-intro">
+<div class="chapter-intro" markdown="1">
   <span class="chapter-pill">起步章节</span>
   <span class="chapter-pill">公式阅读</span>
   <span class="chapter-pill">图像直觉</span>
