@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+  <title id="title">Constraint pushes the optimum to the boundary</title>
+  <desc id="desc">A parabola for f(x) = (x+1)^2 is shown together with the constraint x >= 0. The unconstrained minimum at x = -1 is outside the feasible region, so the best feasible point sits at the boundary x = 0.</desc>
+  <rect width="760" height="500" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="56" font-size="28" font-weight="bold">When the unconstrained minimum lies outside the allowed region, the best feasible point is pushed onto the boundary</text>
+    <text x="54" y="86" font-size="19">This is the simplest picture behind many constrained optimization problems.</text>
+  </g>
+
+  <g stroke="#cbd5e0" stroke-width="2">
+    <line x1="88" y1="396" x2="680" y2="396"/>
+    <line x1="384" y1="130" x2="384" y2="396"/>
+  </g>
+  <g fill="#486581" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="666" y="422">x</text>
+    <text x="392" y="148">f(x)</text>
+  </g>
+
+  <path d="M 128 168
+           C 204 256, 260 336, 292 364
+           C 316 384, 338 396, 356 400
+           C 380 406, 410 404, 446 388
+           C 500 362, 560 302, 640 180"
+        fill="none" stroke="#3366cc" stroke-width="5" stroke-linecap="round"/>
+
+  <g fill="#fef3c7" opacity="0.8">
+    <rect x="384" y="132" width="296" height="264"/>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold">
+    <text x="530" y="160">feasible region: x &gt;= 0</text>
+  </g>
+
+  <g stroke="#d97706" stroke-width="4" stroke-dasharray="10 7">
+    <line x1="384" y1="132" x2="384" y2="396"/>
+  </g>
+
+  <g fill="#c53030">
+    <circle cx="292" cy="364" r="8"/>
+  </g>
+  <g fill="#c53030" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="164" y="348">unconstrained minimum</text>
+    <text x="186" y="372">x = -1, not allowed</text>
+  </g>
+
+  <g fill="#2f855a">
+    <circle cx="384" cy="396" r="8"/>
+  </g>
+  <g fill="#2f855a" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="408" y="388">best feasible point</text>
+    <text x="408" y="412">x = 0, on the boundary</text>
+  </g>
+
+  <g stroke="#c53030" stroke-width="3.5" fill="none" stroke-dasharray="8 6">
+    <line x1="300" y1="370" x2="376" y2="392"/>
+  </g>
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="224" y="450">The target function still prefers the bowl bottom, but the constraint blocks that point. So optimization must settle for the lowest point that remains feasible.</text>
+  </g>
+</svg>

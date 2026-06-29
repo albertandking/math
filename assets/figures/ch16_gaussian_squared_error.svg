@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500" role="img" aria-labelledby="title desc">
+  <title id="title">Gaussian noise links residual size to likelihood</title>
+  <desc id="desc">A Gaussian bell curve over residual values highlights that residuals near zero are more likely and large residuals have much lower density, so negative log likelihood grows with squared error.</desc>
+  <rect width="760" height="500" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="56" font-size="28" font-weight="bold">Under Gaussian noise, small residuals stay near the peak and large residuals fall into low-probability tails</text>
+    <text x="54" y="86" font-size="19">That is why maximizing likelihood prefers predictions with smaller squared residuals.</text>
+  </g>
+
+  <g stroke="#cbd5e0" stroke-width="2">
+    <line x1="90" y1="390" x2="676" y2="390"/>
+    <line x1="384" y1="390" x2="384" y2="144"/>
+  </g>
+  <g fill="#486581" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="660" y="418">residual r = y - y_hat</text>
+    <text x="392" y="160">r = 0</text>
+  </g>
+
+  <path d="M 126 390
+           C 182 390, 214 332, 260 252
+           C 304 176, 346 122, 384 112
+           C 422 122, 464 176, 508 252
+           C 554 332, 586 390, 642 390"
+        fill="none" stroke="#3366cc" stroke-width="5" stroke-linecap="round"/>
+
+  <g stroke-dasharray="8 7" stroke-width="3">
+    <line x1="322" y1="390" x2="322" y2="186" stroke="#2f855a"/>
+    <line x1="510" y1="390" x2="510" y2="330" stroke="#c53030"/>
+  </g>
+  <g fill="#2f855a">
+    <circle cx="322" cy="186" r="7"/>
+  </g>
+  <g fill="#c53030">
+    <circle cx="510" cy="330" r="7"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="250" y="174">small residual</text>
+    <text x="250" y="198">higher likelihood</text>
+    <text x="522" y="320">large residual</text>
+    <text x="522" y="344">lower likelihood</text>
+  </g>
+
+  <g fill="#eef7ee" stroke="#2f855a" stroke-width="3">
+    <rect x="120" y="126" width="112" height="64" rx="14"/>
+  </g>
+  <g fill="#fff1f1" stroke="#c53030" stroke-width="3">
+    <rect x="546" y="280" width="120" height="64" rx="14"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold">
+    <text x="176" y="153" text-anchor="middle">r = 0.4</text>
+    <text x="176" y="176" text-anchor="middle">N(r; 0, sigma^2)</text>
+    <text x="606" y="307" text-anchor="middle">r = 1.8</text>
+    <text x="606" y="330" text-anchor="middle">N(r; 0, sigma^2)</text>
+  </g>
+
+  <g fill="#f8fbff" stroke="#bfd3e6" stroke-width="3">
+    <rect x="116" y="416" width="532" height="48" rx="14"/>
+  </g>
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="132" y="447">Residuals near zero sit in the high-density center, so the data look more probable. Large residuals fall into the tail and pay a larger negative log-likelihood cost.</text>
+  </g>
+</svg>
