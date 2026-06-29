@@ -128,6 +128,8 @@ z = Wx + b
 !!! abstract "定义 13.5（反向传播）"
     利用链式法则把损失函数对输出的梯度逐层传回各层参数上的过程，称为**反向传播**。
 
+第一次读到这里时，更重要的是先把“误差信号会沿网络往回传”这层结构直觉建立起来，而不必急于一次性掌握所有矩阵形式的推导。后续如果继续进入第 15 章，你会进一步看到：当参数不再只是单个标量，而是向量、矩阵甚至批量张量时，反向传播依然可以被统一写成一套有组织的导数规则，这正是矩阵微积分与自动求导要系统展开的内容。
+
 ### 6. 计算图
 
 计算图（computational graph）可以把一个复杂模型理解成许多简单运算节点组成的图结构。前向传播就是按图从前到后计算，反向传播则是沿图从后到前传递梯度。这个视角对理解深度学习框架非常有帮助。
@@ -250,9 +252,93 @@ ReLU 函数定义为
 
 ## 图示理解 { #chapter-13-figures }
 
-理解神经网络时，最先要建立的画面，是单个神经元的结构图。读这种图时，可以先顺着输入箭头看每个特征怎样进入加权求和节点，再看这个线性结果如何经过激活函数变成输出。只要这条路径读顺，神经元就不会再像黑箱，而会显出清晰的内部结构：前半段是线性组合，后半段是非线性变换。若图里同时标出了权重，你还可以继续问：哪一条输入线更粗、权重更大，哪一条输入就在更强地推动这个神经元的打分。
+要把神经网络真正读顺，最值得先看的，不是长公式，而是“一个输入怎样先被打分、再被激活、最后变成输出”这条处理链。
 
-接下来再看两层网络的前向和反向箭头图。前向箭头表示数据怎样一层一层流向输出，反向箭头表示梯度怎样从损失开始，一层一层传回前面的参数。读这类图时，比较稳妥的顺序是：先顺着前向箭头看输入怎样变成隐藏层表示，再看预测值怎样产生，最后逆着反向箭头看损失怎样把更新信号送回各层。读反向箭头时，还可以把每一支箭头都理解成一句问题：“如果这一层的结果稍微变一点，最终损失会跟着变多少？”这样一来，所谓“前向传播”和“反向传播”就不再只是两个术语，而会变成一张可以真正走通的路线图。
+<div class="nn-figure">
+  <div class="nn-figure-head">
+    <span class="nn-figure-kicker">图 13.1</span>
+    <strong>单个神经元如何把输入一步步变成输出</strong>
+    <p>先看输入怎样进入线性打分框，再看激活函数怎样把线性结果翻译成新的表示。</p>
+  </div>
+  <div class="nn-neuron-stage">
+    <div class="nn-stack">
+      <div class="nn-node">x1<small>特征 1</small></div>
+      <div class="nn-node">x2<small>特征 2</small></div>
+      <div class="nn-node">b<small>偏置</small></div>
+    </div>
+    <div class="nn-weight-stack">
+      <div class="nn-wire-label">w1</div>
+      <div class="nn-wire-label">w2</div>
+      <div class="nn-wire-label">+ b</div>
+    </div>
+    <div class="nn-box">
+      <strong>线性打分</strong>
+      <span>\(z = w^\top x + b\)</span>
+      <span>先把各个输入按权重汇总成一个分数</span>
+    </div>
+    <div class="nn-arrow-label">得到分数 z</div>
+    <div class="nn-box nn-box-activation">
+      <strong>激活函数</strong>
+      <span>\(\phi(z)\)</span>
+      <span>把纯线性结果改写成带非线性的表示</span>
+    </div>
+    <div class="nn-arrow-label">输出表示</div>
+    <div class="nn-stack">
+      <div class="nn-node nn-output-node">h<small>神经元输出</small></div>
+    </div>
+  </div>
+  <div class="nn-figure-note">
+    从左往右看时，可以把这张图读成一句完整的话：输入特征先按不同权重进入模型，再和偏置一起组成线性分数 \(z\)，最后经过激活函数变成新的输出表示 \(h\)。这样一来，神经元就不再像一个黑盒按钮，而会显出清晰的内部结构：前半段是线性组合，后半段是非线性变换。
+  </div>
+</div>
+
+接下来再看两层网络里的前向和反向路线图。前向箭头表示数据怎样一层一层流向输出，反向箭头表示梯度怎样从损失开始，一层一层传回前面的参数。
+
+<div class="nn-figure">
+  <div class="nn-figure-head">
+    <span class="nn-figure-kicker">图 13.2</span>
+    <strong>前向传播负责算结果，反向传播负责传回更新信号</strong>
+    <p>顺着蓝色读一次“输入如何变成预测”，再逆着红色读一次“损失怎样把梯度送回参数”。</p>
+  </div>
+  <div class="nn-network-stage">
+    <div class="nn-layer">
+      <div class="nn-layer-title">输入层</div>
+      <div class="nn-mini-node">x1</div>
+      <div class="nn-mini-node">x2</div>
+      <div class="nn-mini-node">x3</div>
+    </div>
+    <div class="nn-link-stack">
+      <div class="nn-link nn-link-forward">前向传播<span>把原始特征送到隐藏层做第一次变换</span></div>
+      <div class="nn-link nn-link-backward">反向传播<span>把梯度传回输入侧相关参数</span></div>
+    </div>
+    <div class="nn-layer">
+      <div class="nn-layer-title">隐藏层</div>
+      <div class="nn-mini-node">z1</div>
+      <div class="nn-mini-node">h1</div>
+      <div class="nn-mini-node">h2</div>
+    </div>
+    <div class="nn-link-stack">
+      <div class="nn-link nn-link-forward">前向传播<span>继续把隐藏表示推向输出层</span></div>
+      <div class="nn-link nn-link-backward">反向传播<span>把后层误差信号继续往前展开</span></div>
+    </div>
+    <div class="nn-layer">
+      <div class="nn-layer-title">输出层</div>
+      <div class="nn-mini-node">z2</div>
+      <div class="nn-mini-node">ŷ</div>
+    </div>
+    <div class="nn-link-stack">
+      <div class="nn-link nn-link-forward">得到预测<span>输出当前样本的预测结果</span></div>
+      <div class="nn-link nn-link-backward">从损失出发<span>根据损失决定每层该怎样改</span></div>
+    </div>
+    <div class="nn-layer">
+      <div class="nn-layer-title">损失</div>
+      <div class="nn-mini-node loss">L</div>
+    </div>
+  </div>
+  <div class="nn-figure-note">
+    读这张图时，比较稳妥的顺序是：先顺着蓝色方向看输入怎样变成隐藏层表示，再看预测值怎样产生；然后再逆着红色方向看损失怎样把更新信号送回各层。读反向这条线时，还可以把每一段都理解成一句问题：“如果这一层的结果稍微变一点，最终损失会跟着变多少？”这样一来，所谓前向传播和反向传播就不再只是两个术语，而会变成一张可以真正走通的路线图。
+  </div>
+</div>
 
 如果再把图和代码对起来看，理解会更稳。可以把前向箭头依次对应到 `x_value -> z1 -> h1 -> prediction`，再把反向箭头对应到 `d_loss_d_prediction -> d_loss_d_h1 -> d_loss_d_z1 -> d_loss_d_w1`。对初学者来说，这种“一边看图，一边认变量”的方式，往往比直接背定义更有效，因为它能把抽象术语重新压回到具体计算过程中。
 
@@ -321,6 +407,8 @@ print("对 b1 的梯度:", d_loss_d_b1)
 
 读这段代码时，也可以按两遍来读。第一遍只看前向部分，确认每个变量究竟代表“分数”“激活后表示”还是“最终预测”；第二遍再看反向部分，确认每个梯度是在回答“损失对谁的变化最敏感”。一旦这两遍阅读习惯建立起来，后面面对更深层的网络代码时也更容易保持方向感。
 
+不过，也要看清这一段目前仍然是“最小示例版”的反向传播。这里的参数和中间量大多还是标量，所以链条比较容易逐项写开；后续继续进入矩阵微积分与自动求导时，你会进一步看到同样的过程怎样扩展到矩阵参数、批量输入和多层网络，并被深度学习框架统一实现。
+
 ## 与机器学习的联系
 
 ### 1. 神经网络是在重复使用线性模型的核心结构
@@ -383,6 +471,8 @@ print("对 b1 的梯度:", d_loss_d_b1)
 
 从整本书的角度看，本章也是一次重要综合：向量、矩阵、函数、导数、优化和概率解释，都会在神经网络中重新出现。本章最后真正希望读者建立起来的，并不是对某一类网络实现细节的机械记忆，而是这样一个稳定认识：深度学习的复杂外观之下，仍然是前面学过的数学在更大规模上的协调运作。
 
+如果把本章和后续进阶内容连起来看，可以把它理解成“神经网络的结构直觉版”。本章主要回答的是：网络里有哪些基本零件、前向传播和反向传播分别在做什么；而在后续进入矩阵微积分与自动求导时，你会进一步回答：这些梯度为什么能写成统一形式、当参数变成矩阵时该怎样组织、深度学习框架又是怎样把这些求导过程规模化实现的。也就是说，本章先帮你把路看清，后续章节再帮你把这条路走得更深入、更系统。
+
 <div class="chapter-nav">
   <a href="../12-linear-models/">
     <strong>上一章</strong>
@@ -397,4 +487,3 @@ print("对 b1 的梯度:", d_loss_d_b1)
     进入第 14 章：通过模型复盘数学
   </a>
 </div>
-

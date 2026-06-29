@@ -233,3 +233,391 @@
     max-width: 100%;
   }
 }
+
+.nn-figure {
+  margin: 1.2rem 0 1.5rem;
+  padding: 1rem 1rem 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 14%, transparent);
+  border-radius: 18px;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--md-primary-fg-color) 5%, white),
+    color-mix(in srgb, var(--md-code-bg-color) 75%, white)
+  );
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.nn-figure + .nn-figure {
+  margin-top: 1.1rem;
+}
+
+.nn-figure-head {
+  margin-bottom: 0.9rem;
+}
+
+.nn-figure-kicker {
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  padding: 0.16rem 0.58rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 14%, transparent);
+  color: var(--md-primary-fg-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.nn-figure-head strong {
+  display: block;
+  margin-bottom: 0.18rem;
+  font-size: 0.95rem;
+}
+
+.nn-figure-head p {
+  margin: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+.nn-neuron-stage {
+  display: grid;
+  grid-template-columns: minmax(92px, 108px) minmax(84px, 96px) minmax(128px, 156px) minmax(88px, 100px) minmax(116px, 144px) minmax(88px, 100px) minmax(76px, 92px);
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.nn-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.nn-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 999px;
+  border: 2px solid color-mix(in srgb, var(--md-primary-fg-color) 32%, transparent);
+  background: #fff;
+  font-weight: 700;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08);
+}
+
+.nn-node small {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: var(--md-default-fg-color--light);
+}
+
+.nn-weight-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.05rem;
+  align-items: stretch;
+}
+
+.nn-wire-label,
+.nn-arrow-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 0.35rem 0.45rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 9%, white);
+  color: var(--md-primary-fg-color);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.nn-wire-label::after,
+.nn-arrow-label::after {
+  content: " -->";
+  margin-left: 0.18rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.nn-box {
+  padding: 0.85rem 0.8rem;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 16%, transparent);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+  text-align: center;
+}
+
+.nn-box strong {
+  display: block;
+  margin-bottom: 0.2rem;
+  font-size: 0.84rem;
+}
+
+.nn-box span {
+  display: block;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  line-height: 1.65;
+}
+
+.nn-box-activation {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 6%, white);
+}
+
+.nn-output-node {
+  border-color: color-mix(in srgb, var(--md-accent-fg-color) 28%, transparent);
+}
+
+.nn-figure-note {
+  margin-top: 0.85rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--md-default-fg-color) 4%, white);
+  font-size: 0.76rem;
+  line-height: 1.8;
+  color: var(--md-default-fg-color--light);
+}
+
+.nn-network-stage {
+  display: grid;
+  grid-template-columns: minmax(100px, 118px) minmax(132px, 160px) minmax(100px, 118px) minmax(132px, 160px) minmax(100px, 118px) minmax(132px, 160px) minmax(102px, 120px);
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.nn-layer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.nn-layer-title {
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--md-default-fg-color--light);
+}
+
+.nn-mini-node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid color-mix(in srgb, var(--md-primary-fg-color) 28%, transparent);
+  font-size: 0.73rem;
+  font-weight: 700;
+  box-shadow: 0 5px 16px rgba(15, 23, 42, 0.08);
+}
+
+.nn-mini-node.loss {
+  border-color: #dc2626;
+  color: #991b1b;
+  background: #fff7f7;
+}
+
+.nn-link-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.nn-link {
+  padding: 0.62rem 0.7rem;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.65;
+  font-weight: 700;
+}
+
+.nn-link span {
+  display: block;
+  margin-top: 0.12rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color--light);
+}
+
+.nn-link-forward {
+  background: color-mix(in srgb, #2563eb 10%, white);
+  color: #1d4ed8;
+}
+
+.nn-link-forward::before {
+  content: "--> ";
+}
+
+.nn-link-backward {
+  background: color-mix(in srgb, #dc2626 10%, white);
+  color: #b91c1c;
+}
+
+.nn-link-backward::before {
+  content: "<-- ";
+}
+
+.ml-loop {
+  margin: 1.2rem 0 1.5rem;
+  padding: 1rem 1rem 1.15rem;
+  border-radius: 18px;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 14%, transparent);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--md-primary-fg-color) 4%, white),
+    color-mix(in srgb, var(--md-code-bg-color) 78%, white)
+  );
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.ml-loop-head {
+  margin-bottom: 0.95rem;
+}
+
+.ml-loop-head strong {
+  display: block;
+  margin-bottom: 0.22rem;
+  font-size: 0.95rem;
+}
+
+.ml-loop-head p {
+  margin: 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+  line-height: 1.75;
+}
+
+.ml-loop-cycle {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 0.7rem;
+  align-items: stretch;
+}
+
+.ml-loop-step {
+  position: relative;
+  padding: 0.92rem 0.9rem 0.95rem;
+  border-radius: 16px;
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 16%, transparent);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.07);
+}
+
+.ml-loop-step strong {
+  display: block;
+  margin-bottom: 0.24rem;
+  font-size: 0.84rem;
+}
+
+.ml-loop-step span {
+  display: block;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.72rem;
+  line-height: 1.68;
+}
+
+.ml-loop-step::after {
+  content: "-->";
+  position: absolute;
+  top: 50%;
+  right: -0.62rem;
+  transform: translateY(-50%);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.ml-loop-step:last-child::after {
+  content: "";
+}
+
+.ml-loop-return {
+  margin-top: 0.75rem;
+  padding: 0.72rem 0.9rem;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--md-accent-fg-color) 8%, white);
+  color: var(--md-default-fg-color);
+  font-size: 0.75rem;
+  line-height: 1.78;
+  text-align: center;
+}
+
+.ml-loop-return strong {
+  color: var(--md-accent-fg-color);
+}
+
+.ml-loop-tracks {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 0.75rem;
+  margin-top: 0.9rem;
+}
+
+.ml-track {
+  padding: 0.7rem 0.8rem;
+  border-radius: 14px;
+  font-size: 0.73rem;
+  line-height: 1.7;
+}
+
+.ml-track strong {
+  display: block;
+  margin-bottom: 0.14rem;
+}
+
+.ml-track-data {
+  background: color-mix(in srgb, #2563eb 9%, white);
+}
+
+.ml-track-model {
+  background: color-mix(in srgb, #7c3aed 9%, white);
+}
+
+.ml-track-loss {
+  background: color-mix(in srgb, #ea580c 10%, white);
+}
+
+.ml-track-update {
+  background: color-mix(in srgb, #059669 10%, white);
+}
+
+@media screen and (max-width: 76.2344em) {
+  .nn-neuron-stage,
+  .nn-network-stage {
+    grid-template-columns: 1fr;
+  }
+
+  .nn-weight-stack,
+  .nn-link-stack {
+    width: 100%;
+  }
+
+  .nn-wire-label::after,
+  .nn-arrow-label::after,
+  .nn-link-forward::before,
+  .nn-link-backward::before {
+    content: "";
+  }
+
+  .nn-wire-label,
+  .nn-arrow-label,
+  .nn-link {
+    border-radius: 14px;
+  }
+
+  .ml-loop-cycle,
+  .ml-loop-tracks {
+    grid-template-columns: 1fr;
+  }
+
+  .ml-loop-step::after {
+    content: "";
+  }
+}

@@ -96,6 +96,9 @@
 - **第 14 章 通过模型复盘数学**  
   [阅读](14-math-review-through-models.md)
 
+- **第 15 章 矩阵微积分与自动求导**  
+  [阅读](15-matrix-calculus-and-autodiff.md)
+
 </div>
 
 ## 阅读方式建议
