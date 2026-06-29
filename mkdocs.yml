@@ -90,6 +90,6 @@ nav:
       - 第 13 章 神经网络的数学基础: chapters/13-neural-network-math.md
       - 第 14 章 通过模型复盘数学: chapters/14-math-review-through-models.md
   - 附录:
-      - 附录 A 术语、符号与读法表: docs/appendix/notation-glossary.md
+    - 附录 A 术语、符号、读法与名词对照: docs/appendix/notation-glossary.md
       - 附录 B 公式阅读速查: docs/appendix/formula-reading-guide.md
       - 附录 C 习题参考与思路: docs/appendix/exercise-hints.md
