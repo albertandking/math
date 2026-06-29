@@ -385,8 +385,8 @@ z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b
 
 <div class="chapter-nav">
   <a href="README.md">
-    <strong>返回目录</strong>
-    回到章节目录页，重新选择阅读入口
+    <strong>章节目录</strong>
+    返回章节导航页，重新选择阅读入口
   </a>
   <a href="02-functions-and-change.md">
     <strong>下一章</strong>
