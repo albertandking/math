@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Point Cloud and Principal Directions</title>
+  <desc id="desc">A slanted point cloud with a principal direction and an orthogonal secondary direction for PCA intuition.</desc>
+  <rect width="760" height="520" fill="#ffffff"/>
+  <g stroke="#d9e2ec" stroke-width="1">
+    <line x1="80" y1="430" x2="700" y2="430"/>
+    <line x1="80" y1="350" x2="700" y2="350"/>
+    <line x1="80" y1="270" x2="700" y2="270"/>
+    <line x1="80" y1="190" x2="700" y2="190"/>
+    <line x1="80" y1="110" x2="700" y2="110"/>
+    <line x1="120" y1="70" x2="120" y2="450"/>
+    <line x1="240" y1="70" x2="240" y2="450"/>
+    <line x1="360" y1="70" x2="360" y2="450"/>
+    <line x1="480" y1="70" x2="480" y2="450"/>
+    <line x1="600" y1="70" x2="600" y2="450"/>
+  </g>
+  <g stroke="#102a43" stroke-width="2">
+    <line x1="80" y1="430" x2="700" y2="430"/>
+    <line x1="120" y1="450" x2="120" y2="70"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="690" y="457">x</text>
+    <text x="101" y="86">y</text>
+  </g>
+
+  <g stroke="#cc6633" stroke-width="5" stroke-linecap="round">
+    <line x1="155" y1="365" x2="610" y2="125"/>
+  </g>
+  <g stroke="#2f855a" stroke-width="4" stroke-dasharray="12 10" stroke-linecap="round">
+    <line x1="340" y1="105" x2="430" y2="385"/>
+  </g>
+
+  <g fill="#3366cc" stroke="#1f4f8a" stroke-width="1.5">
+    <circle cx="196" cy="332" r="8"/>
+    <circle cx="232" cy="322" r="8"/>
+    <circle cx="264" cy="304" r="8"/>
+    <circle cx="301" cy="287" r="8"/>
+    <circle cx="332" cy="271" r="8"/>
+    <circle cx="366" cy="254" r="8"/>
+    <circle cx="402" cy="240" r="8"/>
+    <circle cx="439" cy="220" r="8"/>
+    <circle cx="474" cy="202" r="8"/>
+    <circle cx="510" cy="183" r="8"/>
+    <circle cx="545" cy="168" r="8"/>
+  </g>
+
+  <g fill="#222222">
+    <circle cx="382" cy="247" r="6"/>
+  </g>
+
+  <g fill="#cc6633" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="620" y="132">PC1</text>
+  </g>
+  <g fill="#2f855a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="438" y="395">PC2</text>
+  </g>
+  <g fill="#222222" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="392" y="243">center</text>
+  </g>
+
+  <g fill="#486581" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="165" y="485">A slanted sample cloud stretches most strongly along PC1.</text>
+  </g>
+</svg>

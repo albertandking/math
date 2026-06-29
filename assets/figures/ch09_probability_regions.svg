@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="540" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+  <title id="title">Sample Space, Events, and Conditional Probability</title>
+  <desc id="desc">A left panel shows the sample space with overlapping events A and B. A right panel zooms into event B and highlights the overlap A intersect B to illustrate conditional probability.</desc>
+  <rect width="760" height="540" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="88" y="66" font-size="26" font-weight="bold">Whole sample space</text>
+    <text x="454" y="66" font-size="26" font-weight="bold">Look only inside B</text>
+  </g>
+
+  <g stroke="#102a43" stroke-width="3" fill="#f8fbff">
+    <rect x="80" y="100" width="270" height="320" rx="8"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="bold">
+    <text x="94" y="132">sample space Ω</text>
+  </g>
+
+  <g opacity="0.88">
+    <ellipse cx="182" cy="258" rx="90" ry="118" fill="#6fa8dc"/>
+    <ellipse cx="258" cy="258" rx="90" ry="118" fill="#f6ad55"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="bold">
+    <text x="126" y="252">A</text>
+    <text x="282" y="252">B</text>
+    <text x="192" y="258" text-anchor="middle" fill="#1f2933">A ∩ B</text>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="87" y="452">First compare A, B, and their overlap</text>
+    <text x="87" y="478">inside the whole space.</text>
+  </g>
+
+  <g stroke="#486581" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="380" y1="262" x2="448" y2="262"/>
+    <polyline points="430,244 450,262 430,280"/>
+  </g>
+  <g fill="#486581" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="369" y="235">shrink the view</text>
+  </g>
+
+  <g stroke="#102a43" stroke-width="3" fill="#fffaf2">
+    <rect x="450" y="100" width="230" height="320" rx="8"/>
+  </g>
+  <g fill="#f6ad55" opacity="0.45">
+    <rect x="472" y="144" width="186" height="230" rx="14"/>
+  </g>
+  <g fill="#9f7aea" opacity="0.82">
+    <rect x="472" y="144" width="112" height="230" rx="14"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="bold">
+    <text x="548" y="132" text-anchor="middle">B</text>
+    <text x="528" y="268" text-anchor="middle" fill="#ffffff">A ∩ B</text>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="470" y="452">Now the denominator is the size of B.</text>
+    <text x="470" y="478">The numerator is the part of B that is also in A.</text>
+  </g>
+
+  <g fill="#7b8794" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="516" y="512">P(A | B) = overlap inside B / whole B</text>
+  </g>
+</svg>

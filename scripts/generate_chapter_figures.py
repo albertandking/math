@@ -7,6 +7,7 @@ These figures focus on intuition and avoid visual clutter.
 from __future__ import annotations
 
 from collections.abc import Callable, Iterable
+import math
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -253,6 +254,94 @@ def chapter_04_linear_transform() -> None:
     save_figure("ch04_linear_transform.png")
 
 
+def chapter_05_pca_point_cloud() -> None:
+    """Generate a point-cloud figure for the PCA intuition section.
+
+    The plot shows an oblique cloud of two-dimensional samples together with
+    the principal and secondary directions through the sample center.
+    """
+    angle_radians: float = math.radians(32.0)
+    major_direction: tuple[float, float] = (math.cos(angle_radians), math.sin(angle_radians))
+    minor_direction: tuple[float, float] = (-major_direction[1], major_direction[0])
+
+    # Predefined coordinates keep the figure deterministic across runs.
+    major_coordinates: list[float] = [-3.2, -2.6, -2.1, -1.5, -0.9, -0.2, 0.5, 1.2, 1.9, 2.5, 3.0]
+    minor_offsets: list[float] = [0.20, -0.18, 0.10, -0.12, 0.08, -0.05, 0.04, -0.09, 0.11, -0.15, 0.17]
+
+    points: list[tuple[float, float]] = []
+    for major_coordinate, minor_offset in zip(major_coordinates, minor_offsets):
+        x_value: float = major_coordinate * major_direction[0] + minor_offset * minor_direction[0]
+        y_value: float = major_coordinate * major_direction[1] + minor_offset * minor_direction[1]
+        points.append((x_value, y_value))
+
+    center_x: float = sum(point[0] for point in points) / len(points)
+    center_y: float = sum(point[1] for point in points) / len(points)
+
+    plt.figure(figsize=(6.3, 5.2))
+    ax: plt.Axes = plt.gca()
+
+    # Show the sample cloud first so the principal direction feels data-driven.
+    ax.scatter(
+        [point[0] for point in points],
+        [point[1] for point in points],
+        color="#3366cc",
+        s=42,
+        alpha=0.9,
+        label="samples",
+    )
+
+    axis_half_length: float = 3.7
+    principal_start: tuple[float, float] = (
+        center_x - axis_half_length * major_direction[0],
+        center_y - axis_half_length * major_direction[1],
+    )
+    principal_end: tuple[float, float] = (
+        center_x + axis_half_length * major_direction[0],
+        center_y + axis_half_length * major_direction[1],
+    )
+    secondary_half_length: float = 1.6
+    secondary_start: tuple[float, float] = (
+        center_x - secondary_half_length * minor_direction[0],
+        center_y - secondary_half_length * minor_direction[1],
+    )
+    secondary_end: tuple[float, float] = (
+        center_x + secondary_half_length * minor_direction[0],
+        center_y + secondary_half_length * minor_direction[1],
+    )
+
+    # Draw the two orthogonal directions through the cloud center.
+    ax.plot(
+        [principal_start[0], principal_end[0]],
+        [principal_start[1], principal_end[1]],
+        color="#cc6633",
+        linewidth=2.4,
+        label="principal direction",
+    )
+    ax.plot(
+        [secondary_start[0], secondary_end[0]],
+        [secondary_start[1], secondary_end[1]],
+        color="#2f855a",
+        linewidth=2.2,
+        linestyle="--",
+        label="secondary direction",
+    )
+
+    ax.scatter([center_x], [center_y], color="#222222", s=30, zorder=5)
+    ax.annotate("center", (center_x, center_y), xytext=(6, 6), textcoords="offset points")
+    ax.annotate("PC1", principal_end, xytext=(6, -12), textcoords="offset points", color="#cc6633")
+    ax.annotate("PC2", secondary_end, xytext=(6, 6), textcoords="offset points", color="#2f855a")
+
+    x_values: list[float] = [point[0] for point in points]
+    y_values: list[float] = [point[1] for point in points]
+    ax.set_xlim(min(x_values) - 0.9, max(x_values) + 0.9)
+    ax.set_ylim(min(y_values) - 0.9, max(y_values) + 0.9)
+    ax.set_aspect("equal", adjustable="box")
+    apply_axes_style(ax, "x", "y")
+    ax.set_title("Point Cloud and Principal Directions")
+    ax.legend(loc="upper left")
+    save_figure("ch05_pca_point_cloud.png")
+
+
 def generate_all() -> None:
     """Generate all currently defined chapter figures."""
     generators: Iterable[Callable[[], None]] = (
@@ -263,6 +352,7 @@ def generate_all() -> None:
         chapter_03_distance,
         chapter_04_matrix_grid,
         chapter_04_linear_transform,
+        chapter_05_pca_point_cloud,
     )
     for generator in generators:
         # Keep the workflow simple: each generator is independent and writes one file.

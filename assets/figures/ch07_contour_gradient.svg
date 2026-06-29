@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="540" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+  <title id="title">Contour Lines and Gradient Direction</title>
+  <desc id="desc">Contour lines around a point with a gradient arrow pointing toward steepest ascent and a descent arrow in the opposite direction.</desc>
+  <rect width="760" height="540" fill="#ffffff"/>
+
+  <g stroke="#d9e2ec" stroke-width="1">
+    <line x1="80" y1="460" x2="700" y2="460"/>
+    <line x1="80" y1="380" x2="700" y2="380"/>
+    <line x1="80" y1="300" x2="700" y2="300"/>
+    <line x1="80" y1="220" x2="700" y2="220"/>
+    <line x1="80" y1="140" x2="700" y2="140"/>
+    <line x1="120" y1="80" x2="120" y2="480"/>
+    <line x1="240" y1="80" x2="240" y2="480"/>
+    <line x1="360" y1="80" x2="360" y2="480"/>
+    <line x1="480" y1="80" x2="480" y2="480"/>
+    <line x1="600" y1="80" x2="600" y2="480"/>
+  </g>
+
+  <g stroke="#102a43" stroke-width="2">
+    <line x1="80" y1="460" x2="700" y2="460"/>
+    <line x1="120" y1="480" x2="120" y2="80"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="690" y="487">x</text>
+    <text x="101" y="96">y</text>
+  </g>
+
+  <g fill="none" stroke="#7b8794" stroke-width="2.5">
+    <ellipse cx="360" cy="300" rx="60" ry="36"/>
+    <ellipse cx="360" cy="300" rx="115" ry="70"/>
+    <ellipse cx="360" cy="300" rx="175" ry="105"/>
+  </g>
+
+  <g stroke="#3366cc" stroke-width="2.5" stroke-dasharray="9 7">
+    <line x1="250" y1="370" x2="470" y2="230"/>
+  </g>
+
+  <g fill="#222222">
+    <circle cx="360" cy="300" r="6"/>
+  </g>
+
+  <g stroke="#cc6633" stroke-width="6" stroke-linecap="round">
+    <line x1="360" y1="300" x2="470" y2="220"/>
+    <polygon points="470,220 448,223 460,239" fill="#cc6633" stroke="none"/>
+  </g>
+
+  <g stroke="#2f855a" stroke-width="6" stroke-linecap="round">
+    <line x1="360" y1="300" x2="265" y2="370"/>
+    <polygon points="265,370 286,367 276,351" fill="#2f855a" stroke="none"/>
+  </g>
+
+  <g stroke="#486581" stroke-width="4" stroke-linecap="round">
+    <line x1="360" y1="300" x2="430" y2="300"/>
+    <polygon points="430,300 413,291 413,309" fill="#486581" stroke="none"/>
+  </g>
+
+  <g fill="#cc6633" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="484" y="220">gradient</text>
+  </g>
+  <g fill="#2f855a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="184" y="392">descent direction</text>
+  </g>
+  <g fill="#486581" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="438" y="306">move along a contour</text>
+  </g>
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="450" y="116">outer contour = higher level</text>
+    <text x="450" y="140">inner contour = lower level</text>
+    <text x="166" y="206">contour lines mark</text>
+    <text x="166" y="228">points of equal height</text>
+  </g>
+</svg>

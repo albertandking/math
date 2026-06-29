@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Unit Circle to Ellipse with Stable Directions</title>
+  <desc id="desc">A unit circle and a transformed ellipse showing that most directions rotate, while a few special directions stay on the same line and only stretch or shrink.</desc>
+  <rect width="760" height="520" fill="#ffffff"/>
+
+  <g stroke="#d9e2ec" stroke-width="1">
+    <line x1="80" y1="430" x2="700" y2="430"/>
+    <line x1="80" y1="350" x2="700" y2="350"/>
+    <line x1="80" y1="270" x2="700" y2="270"/>
+    <line x1="80" y1="190" x2="700" y2="190"/>
+    <line x1="80" y1="110" x2="700" y2="110"/>
+    <line x1="120" y1="70" x2="120" y2="450"/>
+    <line x1="240" y1="70" x2="240" y2="450"/>
+    <line x1="360" y1="70" x2="360" y2="450"/>
+    <line x1="480" y1="70" x2="480" y2="450"/>
+    <line x1="600" y1="70" x2="600" y2="450"/>
+  </g>
+
+  <g stroke="#102a43" stroke-width="2">
+    <line x1="80" y1="430" x2="700" y2="430"/>
+    <line x1="120" y1="450" x2="120" y2="70"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="690" y="457">x</text>
+    <text x="101" y="86">y</text>
+  </g>
+
+  <g fill="none">
+    <circle cx="360" cy="270" r="95" stroke="#9fb3c8" stroke-width="3"/>
+    <ellipse cx="360" cy="270" rx="155" ry="72" transform="rotate(-28 360 270)" stroke="#3366cc" stroke-width="4"/>
+  </g>
+
+  <g stroke="#cc6633" stroke-width="5" stroke-linecap="round">
+    <line x1="225" y1="342" x2="495" y2="198"/>
+  </g>
+  <g stroke="#2f855a" stroke-width="4" stroke-linecap="round">
+    <line x1="316" y1="158" x2="404" y2="382"/>
+  </g>
+
+  <g stroke="#486581" stroke-width="3" stroke-linecap="round">
+    <line x1="360" y1="270" x2="431" y2="168"/>
+    <line x1="360" y1="270" x2="457" y2="288"/>
+    <line x1="360" y1="270" x2="301" y2="184"/>
+  </g>
+
+  <g stroke="#cc6633" stroke-width="3" stroke-dasharray="10 8">
+    <line x1="205" y1="352" x2="520" y2="184"/>
+  </g>
+  <g stroke="#2f855a" stroke-width="3" stroke-dasharray="10 8">
+    <line x1="301" y1="120" x2="418" y2="417"/>
+  </g>
+
+  <g fill="#cc6633" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="520" y="188">stable direction 1</text>
+  </g>
+  <g fill="#2f855a" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="430" y="420">stable direction 2</text>
+  </g>
+  <g fill="#486581" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="467" y="165">most directions rotate</text>
+    <text x="458" y="289">and change length</text>
+  </g>
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="212" y="98">unit circle</text>
+    <text x="505" y="108">transformed ellipse</text>
+  </g>
+</svg>

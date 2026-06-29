@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="540" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+  <title id="title">Logistic Boundary and Sigmoid Probability</title>
+  <desc id="desc">A left panel shows two classes separated by a linear decision boundary. A right panel shows a sigmoid curve that maps linear scores to probabilities.</desc>
+  <rect width="760" height="540" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="70" y="62" font-size="26" font-weight="bold">Linear score splits the plane</text>
+    <text x="430" y="62" font-size="26" font-weight="bold">Sigmoid turns score into probability</text>
+  </g>
+
+  <g stroke="#d9e2ec" stroke-width="1">
+    <line x1="80" y1="430" x2="360" y2="430"/>
+    <line x1="80" y1="350" x2="360" y2="350"/>
+    <line x1="80" y1="270" x2="360" y2="270"/>
+    <line x1="80" y1="190" x2="360" y2="190"/>
+    <line x1="80" y1="110" x2="360" y2="110"/>
+    <line x1="120" y1="90" x2="120" y2="450"/>
+    <line x1="180" y1="90" x2="180" y2="450"/>
+    <line x1="240" y1="90" x2="240" y2="450"/>
+    <line x1="300" y1="90" x2="300" y2="450"/>
+  </g>
+
+  <g stroke="#102a43" stroke-width="2">
+    <line x1="80" y1="430" x2="360" y2="430"/>
+    <line x1="120" y1="450" x2="120" y2="90"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="350" y="456">x1</text>
+    <text x="100" y="106">x2</text>
+  </g>
+
+  <g fill="#fde8e8">
+    <polygon points="120,110 335,110 150,430 120,430"/>
+  </g>
+  <g fill="#e6fffa">
+    <polygon points="335,110 360,110 360,430 150,430"/>
+  </g>
+
+  <g stroke="#486581" stroke-width="4" stroke-dasharray="10 8">
+    <line x1="335" y1="110" x2="150" y2="430"/>
+  </g>
+
+  <g fill="#c53030">
+    <circle cx="164" cy="176" r="10"/>
+    <circle cx="182" cy="226" r="10"/>
+    <circle cx="208" cy="156" r="10"/>
+    <circle cx="214" cy="246" r="10"/>
+    <circle cx="240" cy="206" r="10"/>
+    <circle cx="258" cy="288" r="10"/>
+  </g>
+  <g fill="#2f855a">
+    <circle cx="282" cy="156" r="10"/>
+    <circle cx="300" cy="224" r="10"/>
+    <circle cx="318" cy="286" r="10"/>
+    <circle cx="270" cy="354" r="10"/>
+    <circle cx="328" cy="366" r="10"/>
+    <circle cx="238" cy="378" r="10"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="144" y="140">negative class</text>
+    <text x="248" y="400">positive class</text>
+    <text x="196" y="300">decision boundary:</text>
+    <text x="196" y="324">w·x + b = 0</text>
+  </g>
+
+  <g stroke="#d9e2ec" stroke-width="1">
+    <line x1="430" y1="430" x2="700" y2="430"/>
+    <line x1="430" y1="350" x2="700" y2="350"/>
+    <line x1="430" y1="270" x2="700" y2="270"/>
+    <line x1="430" y1="190" x2="700" y2="190"/>
+    <line x1="430" y1="110" x2="700" y2="110"/>
+    <line x1="470" y1="90" x2="470" y2="450"/>
+    <line x1="525" y1="90" x2="525" y2="450"/>
+    <line x1="580" y1="90" x2="580" y2="450"/>
+    <line x1="635" y1="90" x2="635" y2="450"/>
+  </g>
+
+  <g stroke="#102a43" stroke-width="2">
+    <line x1="430" y1="430" x2="700" y2="430"/>
+    <line x1="470" y1="450" x2="470" y2="90"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="692" y="456">z</text>
+    <text x="442" y="106">p</text>
+  </g>
+
+  <g fill="none" stroke="#3366cc" stroke-width="5">
+    <path d="M 480 415 C 520 412, 548 388, 565 350 C 582 312, 594 242, 612 190 C 626 150, 650 125, 690 118"/>
+  </g>
+
+  <g stroke="#7b8794" stroke-width="2.5" stroke-dasharray="8 7">
+    <line x1="580" y1="430" x2="580" y2="110"/>
+    <line x1="470" y1="270" x2="698" y2="270"/>
+  </g>
+
+  <g fill="#222222">
+    <circle cx="580" cy="270" r="6"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="592" y="262">z = 0</text>
+    <text x="592" y="286">p = 0.5</text>
+    <text x="500" y="398">z &lt; 0</text>
+    <text x="500" y="420">probability near 0</text>
+    <text x="626" y="156">z &gt; 0</text>
+    <text x="626" y="178">probability near 1</text>
+  </g>
+</svg>
