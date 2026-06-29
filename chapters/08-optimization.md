@@ -4,7 +4,7 @@
   <span class="chapter-pill">目标函数</span>
   <span class="chapter-pill">梯度下降</span>
   <span class="chapter-pill">学习率</span>
-  <p>这一章会把前面学过的**导数、梯度和局部变化率**真正变成“**可行动的规则**”，帮助你理解模型训练为什么会变成一个不断调整参数、让**目标函数逐步下降**的过程。</p>
+  <p>这一章会把前面学过的<strong>导数、梯度和局部变化率</strong>真正变成“<strong>可行动的规则</strong>”，帮助你理解模型训练为什么会变成一个不断调整参数、让<strong>目标函数逐步下降</strong>的过程。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -328,4 +328,5 @@ print(f"更新结束后的损失: {loss_function(weight):.6f}")
     进入第 9 章：概率论基础
   </a>
 </div>
+
 

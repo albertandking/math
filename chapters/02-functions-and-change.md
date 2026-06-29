@@ -4,7 +4,7 @@
   <span class="chapter-pill">函数主线</span>
   <span class="chapter-pill">变化率</span>
   <span class="chapter-pill">导数前置</span>
-  <p>这一章要把“公式在描述什么”进一步推进到“这种关系究竟怎样**变化**，以及**变化得快不快**”。</p>
+  <p>这一章要把“公式在描述什么”进一步推进到“这种关系究竟怎样<strong>变化</strong>，以及<strong>变化得快不快</strong>”。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -467,6 +467,7 @@ plt.show()
     进入第 3 章：向量与几何直觉
   </a>
 </div>
+
 
 
 

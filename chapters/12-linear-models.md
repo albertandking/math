@@ -4,7 +4,7 @@
   <span class="chapter-pill">线性回归</span>
   <span class="chapter-pill">逻辑回归</span>
   <span class="chapter-pill">正则化</span>
-  <p>这一章会把前面学过的**向量、矩阵、导数、概率与优化**真正汇合到具体模型中，让你看到**线性模型**为何能成为机器学习入门阶段最重要的一类模型。</p>
+  <p>这一章会把前面学过的<strong>向量、矩阵、导数、概率与优化</strong>真正汇合到具体模型中，让你看到<strong>线性模型</strong>为何能成为机器学习入门阶段最重要的一类模型。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -383,3 +383,4 @@ print("L2 正则项:", regularization)
     进入第 13 章：神经网络的数学基础
   </a>
 </div>
+

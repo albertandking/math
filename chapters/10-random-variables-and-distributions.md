@@ -4,7 +4,7 @@
   <span class="chapter-pill">随机变量</span>
   <span class="chapter-pill">期望与方差</span>
   <span class="chapter-pill">常见分布</span>
-  <p>这一章会在事件概率的基础上，继续把“**随机结果**”变成可以计算的数值对象，让你理解**随机变量、期望、方差和常见分布**为何会成为数据建模与机器学习中的基础语言。</p>
+  <p>这一章会在事件概率的基础上，继续把“<strong>随机结果</strong>”变成可以计算的数值对象，让你理解<strong>随机变量、期望、方差和常见分布</strong>为何会成为数据建模与机器学习中的基础语言。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -351,3 +351,4 @@ print("前 10 个高斯样本:", gaussian_samples[:10])
     进入第 11 章：统计学基础与估计
   </a>
 </div>
+

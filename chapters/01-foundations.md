@@ -4,7 +4,7 @@
   <span class="chapter-pill">起步章节</span>
   <span class="chapter-pill">公式阅读</span>
   <span class="chapter-pill">图像直觉</span>
-  <p>这一章作为全书的起点，主要任务不是增加计算难度，而是帮助读者建立阅读**数学表达**的基本能力，使**公式、文字、表格和图像**之间能够相互连通。</p>
+  <p>这一章作为全书的起点，主要任务不是增加计算难度，而是帮助读者建立阅读<strong>数学表达</strong>的基本能力，使<strong>公式、文字、表格和图像</strong>之间能够相互连通。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -395,6 +395,7 @@ z = w_1x_1 + w_2x_2 + \cdots + w_nx_n + b
     进入第 2 章：函数、图像与变化率
   </a>
 </div>
+
 
 
 

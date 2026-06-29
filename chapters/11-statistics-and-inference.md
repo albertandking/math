@@ -4,7 +4,7 @@
   <span class="chapter-pill">总体与样本</span>
   <span class="chapter-pill">估计</span>
   <span class="chapter-pill">泛化前置</span>
-  <p>这一章会把概率与分布进一步推进到“如何从**有限样本反推总体规律**”，帮助你理解**总体、样本、统计量、估计和泛化误差**为何会成为机器学习训练与评估的核心问题。</p>
+  <p>这一章会把概率与分布进一步推进到“如何从<strong>有限样本反推总体规律</strong>”，帮助你理解<strong>总体、样本、统计量、估计和泛化误差</strong>为何会成为机器学习训练与评估的核心问题。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -300,4 +300,5 @@ for _ in range(5):
     进入第 12 章：线性模型中的数学
   </a>
 </div>
+
 

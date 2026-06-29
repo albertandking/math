@@ -4,7 +4,7 @@
   <span class="chapter-pill">偏导数</span>
   <span class="chapter-pill">梯度</span>
   <span class="chapter-pill">多变量优化前置</span>
-  <p>这一章会把单变量导数推广到**多个变量同时存在**的情形，让你理解当函数依赖多个输入时，应该如何分别观察**每个方向的变化**，以及为什么**梯度**会成为机器学习优化中的核心对象。</p>
+  <p>这一章会把单变量导数推广到<strong>多个变量同时存在</strong>的情形，让你理解当函数依赖多个输入时，应该如何分别观察<strong>每个方向的变化</strong>，以及为什么<strong>梯度</strong>会成为机器学习优化中的核心对象。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -420,5 +420,6 @@ print("函数值变化:", new_value - value_at_point)
     进入第 8 章：优化与梯度下降
   </a>
 </div>
+
 
 

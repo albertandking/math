@@ -4,7 +4,7 @@
   <span class="chapter-pill">向量入门</span>
   <span class="chapter-pill">距离与方向</span>
   <span class="chapter-pill">线性模型前置</span>
-  <p>这一章会把“单个数字”推进到“由**多个特征组成的对象**”，让你开始用**向量**来理解样本、距离和相似性。</p>
+  <p>这一章会把“单个数字”推进到“由<strong>多个特征组成的对象</strong>”，让你开始用<strong>向量</strong>来理解样本、距离和相似性。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -549,6 +549,7 @@ w \cdot x + b
     进入第 4 章：矩阵与线性变换
   </a>
 </div>
+
 
 
 

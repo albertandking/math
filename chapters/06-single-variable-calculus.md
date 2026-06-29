@@ -4,7 +4,7 @@
   <span class="chapter-pill">导数入门</span>
   <span class="chapter-pill">局部变化</span>
   <span class="chapter-pill">优化前置</span>
-  <p>这一章会把第 2 章里对“变化率”的初步理解继续推进，帮助你从**平均变化**走向**局部变化**，从**割线**走向**切线**，并开始理解为什么**导数**会成为后续优化方法的核心语言。</p>
+  <p>这一章会把第 2 章里对“变化率”的初步理解继续推进，帮助你从<strong>平均变化</strong>走向<strong>局部变化</strong>，从<strong>割线</strong>走向<strong>切线</strong>，并开始理解为什么<strong>导数</strong>会成为后续优化方法的核心语言。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -329,6 +329,7 @@ print(f"两者差值 = {real_value - linear_approximation}")
     进入第 7 章：多元微积分与梯度
   </a>
 </div>
+
 
 
 

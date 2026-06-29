@@ -4,7 +4,7 @@
   <span class="chapter-pill">全书复盘</span>
   <span class="chapter-pill">模型串联</span>
   <span class="chapter-pill">学习闭环</span>
-  <p>这一章不再引入大块全新数学，而是通过典型模型把前面整本书的**主线重新串起来**，帮助你把“零散章节知识”真正收束为“**可迁移的机器学习数学框架**”。</p>
+  <p>这一章不再引入大块全新数学，而是通过典型模型把前面整本书的<strong>主线重新串起来</strong>，帮助你把“零散章节知识”真正收束为“<strong>可迁移的机器学习数学框架</strong>”。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -302,4 +302,5 @@ print("更新后的偏置:", bias)
     回到全书总览页
   </a>
 </div>
+
 

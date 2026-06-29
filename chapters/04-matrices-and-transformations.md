@@ -4,7 +4,7 @@
   <span class="chapter-pill">矩阵入门</span>
   <span class="chapter-pill">线性变换</span>
   <span class="chapter-pill">模型表达前置</span>
-  <p>这一章会把前面学到的向量进一步组织起来，让你理解**矩阵**既是“按行按列排好的数字表”，也是“把向量整体变换”的工具。</p>
+  <p>这一章会把前面学到的向量进一步组织起来，让你理解<strong>矩阵</strong>既是“按行按列排好的数字表”，也是“把向量整体变换”的工具。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -591,6 +591,7 @@ x =
     进入第 5 章：特征值、特征向量与奇异值分解
   </a>
 </div>
+
 
 
 

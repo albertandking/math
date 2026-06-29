@@ -4,7 +4,7 @@
   <span class="chapter-pill">随机性</span>
   <span class="chapter-pill">条件概率</span>
   <span class="chapter-pill">贝叶斯前置</span>
-  <p>这一章会把“确定的输入得到确定的输出”进一步推进到“结果带有**不确定性**”的情形，让你开始用**概率语言**描述事件发生的可能性，并理解机器学习为什么离不开这种不确定性刻画。</p>
+  <p>这一章会把“确定的输入得到确定的输出”进一步推进到“结果带有<strong>不确定性</strong>”的情形，让你开始用<strong>概率语言</strong>描述事件发生的可能性，并理解机器学习为什么离不开这种不确定性刻画。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -376,6 +376,7 @@ print("P(偶数 | 点数大于3) 的经验估计:", simulate_conditional_probabi
     进入第 10 章：随机变量与常见分布
   </a>
 </div>
+
 
 
 

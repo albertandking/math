@@ -4,7 +4,7 @@
   <span class="chapter-pill">仿射变换</span>
   <span class="chapter-pill">激活函数</span>
   <span class="chapter-pill">反向传播</span>
-  <p>这一章会在第 12 章线性模型的基础上继续向前，帮助你理解神经网络为什么可以看成“**线性变换层层叠加再配合非线性激活**”的系统，以及**反向传播**为何本质上只是**链式法则**的系统应用。</p>
+  <p>这一章会在第 12 章线性模型的基础上继续向前，帮助你理解神经网络为什么可以看成“<strong>线性变换层层叠加再配合非线性激活</strong>”的系统，以及<strong>反向传播</strong>为何本质上只是<strong>链式法则</strong>的系统应用。</p>
 </div>
 
 <div class="reading-focus" markdown="1">
@@ -397,3 +397,4 @@ print("对 b1 的梯度:", d_loss_d_b1)
     进入第 14 章：通过模型复盘数学
   </a>
 </div>
+
