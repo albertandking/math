@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Information, entropy, and KL divergence</title>
+  <desc id="desc">A three-panel diagram shows rare events carrying more information, balanced versus peaked distributions having different entropy, and the gap between true and model distributions leading to cross entropy and KL divergence.</desc>
+  <rect width="760" height="560" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="58" y="58" font-size="28" font-weight="bold">From single surprise to whole-distribution uncertainty</text>
+    <text x="58" y="88" font-size="19">Information theory grows in three steps: event surprise, entropy, then distribution mismatch.</text>
+  </g>
+
+  <g fill="#f8fbff" stroke="#bcd2e8" stroke-width="2.5">
+    <rect x="44" y="126" width="212" height="300" rx="18"/>
+    <rect x="274" y="126" width="212" height="300" rx="18"/>
+    <rect x="504" y="126" width="212" height="300" rx="18"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="150" y="162" text-anchor="middle" font-size="24" font-weight="bold">1. single event</text>
+    <text x="380" y="162" text-anchor="middle" font-size="24" font-weight="bold">2. one distribution</text>
+    <text x="610" y="162" text-anchor="middle" font-size="24" font-weight="bold">3. two distributions</text>
+  </g>
+
+  <g fill="#d9e2ec">
+    <rect x="78" y="224" width="38" height="144" rx="6"/>
+    <rect x="152" y="284" width="38" height="84" rx="6"/>
+  </g>
+  <g fill="#3366cc">
+    <rect x="78" y="246" width="38" height="122" rx="6"/>
+  </g>
+  <g fill="#d97706">
+    <rect x="152" y="332" width="38" height="36" rx="6"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="97" y="394" text-anchor="middle">common</text>
+    <text x="171" y="394" text-anchor="middle">rare</text>
+    <text x="74" y="213">higher probability</text>
+    <text x="140" y="454">rare event</text>
+    <text x="140" y="478">more surprise</text>
+  </g>
+  <g stroke="#d97706" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <line x1="187" y1="316" x2="226" y2="236"/>
+    <polyline points="206,240 228,232 236,255"/>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold">
+    <text x="170" y="305">more</text>
+    <text x="172" y="327">information</text>
+  </g>
+
+  <g fill="#2f855a">
+    <rect x="302" y="244" width="26" height="110" rx="5"/>
+    <rect x="336" y="244" width="26" height="110" rx="5"/>
+    <rect x="370" y="244" width="26" height="110" rx="5"/>
+    <rect x="404" y="244" width="26" height="110" rx="5"/>
+  </g>
+  <g fill="#9f7aea">
+    <rect x="302" y="362" width="26" height="22" rx="5"/>
+    <rect x="336" y="338" width="26" height="46" rx="5"/>
+    <rect x="370" y="276" width="26" height="108" rx="5"/>
+    <rect x="404" y="188" width="26" height="196" rx="5"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="364" y="212" text-anchor="middle">balanced distribution</text>
+    <text x="364" y="234" text-anchor="middle">higher entropy</text>
+    <text x="364" y="420" text-anchor="middle">peaked distribution</text>
+    <text x="364" y="442" text-anchor="middle">lower entropy</text>
+  </g>
+
+  <g stroke="#cbd5e0" stroke-width="2">
+    <line x1="534" y1="360" x2="688" y2="360"/>
+    <line x1="534" y1="210" x2="688" y2="210"/>
+  </g>
+  <g fill="#2f855a" opacity="0.92">
+    <rect x="548" y="240" width="28" height="120" rx="5"/>
+    <rect x="590" y="282" width="28" height="78" rx="5"/>
+    <rect x="632" y="318" width="28" height="42" rx="5"/>
+  </g>
+  <g fill="#c53030" opacity="0.78">
+    <rect x="560" y="258" width="28" height="102" rx="5"/>
+    <rect x="602" y="252" width="28" height="108" rx="5"/>
+    <rect x="644" y="294" width="28" height="66" rx="5"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="610" y="190" text-anchor="middle">true p vs model q</text>
+    <text x="610" y="214" text-anchor="middle">height mismatch means extra cost</text>
+    <text x="610" y="398" text-anchor="middle">cross entropy = true entropy + KL gap</text>
+  </g>
+  <g stroke="#c53030" stroke-width="3" fill="none" stroke-dasharray="7 6">
+    <line x1="618" y1="252" x2="618" y2="282"/>
+    <line x1="660" y1="294" x2="660" y2="318"/>
+  </g>
+  <g fill="#c53030" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold">
+    <text x="676" y="300">KL gap</text>
+  </g>
+
+  <g stroke="#486581" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="256" y1="276" x2="274" y2="276"/>
+    <polyline points="258,259 278,276 258,293"/>
+    <line x1="486" y1="276" x2="504" y2="276"/>
+    <polyline points="488,259 508,276 488,293"/>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="54" y="516">Event surprise explains a single outcome. Entropy averages that surprise. KL measures extra mismatch between distributions.</text>
+  </g>
+</svg>

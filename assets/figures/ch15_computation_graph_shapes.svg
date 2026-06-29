@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Computation graph, shapes, and gradient flow</title>
+  <desc id="desc">A diagram shows an input vector flowing through a weight matrix and bias to an output and scalar loss, then gradients flowing backward to x, W, and b with shape annotations.</desc>
+  <rect width="760" height="560" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="58" y="56" font-size="28" font-weight="bold">Forward computation builds the graph, backward computation returns gradients to matching shapes</text>
+    <text x="58" y="86" font-size="19">Read left to right first: x -> Wx + b -> y -> L. Then read right to left: dL/dy -> dL/dW, dL/db, dL/dx.</text>
+  </g>
+
+  <g fill="#eef6ff" stroke="#3366cc" stroke-width="3">
+    <rect x="54" y="170" width="108" height="146" rx="18"/>
+    <rect x="216" y="150" width="134" height="186" rx="18"/>
+    <rect x="404" y="170" width="112" height="146" rx="18"/>
+    <rect x="580" y="194" width="108" height="98" rx="18"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="108" y="204" text-anchor="middle" font-size="26" font-weight="bold">x</text>
+    <text x="108" y="234" text-anchor="middle" font-size="18">input vector</text>
+    <text x="108" y="260" text-anchor="middle" font-size="18">shape d x 1</text>
+
+    <text x="283" y="188" text-anchor="middle" font-size="25" font-weight="bold">W and b</text>
+    <text x="283" y="216" text-anchor="middle" font-size="18">linear layer</text>
+    <text x="283" y="242" text-anchor="middle" font-size="18">W: m x d</text>
+    <text x="283" y="266" text-anchor="middle" font-size="18">b: m x 1</text>
+    <text x="283" y="306" text-anchor="middle" font-size="22">y = Wx + b</text>
+
+    <text x="460" y="204" text-anchor="middle" font-size="26" font-weight="bold">y</text>
+    <text x="460" y="234" text-anchor="middle" font-size="18">output vector</text>
+    <text x="460" y="260" text-anchor="middle" font-size="18">shape m x 1</text>
+
+    <text x="634" y="226" text-anchor="middle" font-size="26" font-weight="bold">L</text>
+    <text x="634" y="252" text-anchor="middle" font-size="18">scalar loss</text>
+  </g>
+
+  <g stroke="#486581" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="162" y1="243" x2="216" y2="243"/>
+    <polyline points="198,226 220,243 198,260"/>
+    <line x1="350" y1="243" x2="404" y2="243"/>
+    <polyline points="386,226 408,243 386,260"/>
+    <line x1="516" y1="243" x2="580" y2="243"/>
+    <polyline points="562,226 584,243 562,260"/>
+  </g>
+
+  <g fill="#f5f3ff" stroke="#7c3aed" stroke-width="3">
+    <rect x="74" y="394" width="136" height="90" rx="16"/>
+    <rect x="254" y="394" width="142" height="90" rx="16"/>
+    <rect x="434" y="394" width="136" height="90" rx="16"/>
+  </g>
+
+  <g fill="#7c3aed" font-family="Arial, Helvetica, sans-serif">
+    <text x="142" y="426" text-anchor="middle" font-size="22" font-weight="bold">dL / dx</text>
+    <text x="142" y="454" text-anchor="middle" font-size="18">returns to</text>
+    <text x="142" y="476" text-anchor="middle" font-size="18">shape d x 1</text>
+
+    <text x="325" y="426" text-anchor="middle" font-size="22" font-weight="bold">dL / dW</text>
+    <text x="325" y="454" text-anchor="middle" font-size="18">returns to</text>
+    <text x="325" y="476" text-anchor="middle" font-size="18">shape m x d</text>
+
+    <text x="502" y="426" text-anchor="middle" font-size="22" font-weight="bold">dL / db</text>
+    <text x="502" y="454" text-anchor="middle" font-size="18">returns to</text>
+    <text x="502" y="476" text-anchor="middle" font-size="18">shape m x 1</text>
+  </g>
+
+  <g stroke="#d97706" stroke-width="4" stroke-linecap="round" fill="none">
+    <path d="M 634 292 C 634 332, 518 346, 502 394"/>
+    <polyline points="491,375 501,398 516,378"/>
+    <path d="M 616 292 C 598 334, 350 344, 325 394"/>
+    <polyline points="313,374 323,398 339,379"/>
+    <path d="M 598 292 C 562 336, 182 340, 142 394"/>
+    <polyline points="129,374 140,398 156,380"/>
+  </g>
+
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold">
+    <text x="620" y="330">start from the scalar loss</text>
+    <text x="604" y="354">and send gradients back</text>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="60" y="526">The key check is always the same: what is this object's shape now, and what shape must its gradient return to?</text>
+  </g>
+</svg>

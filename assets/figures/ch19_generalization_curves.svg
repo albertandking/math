@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="540" viewBox="0 0 760 540" role="img" aria-labelledby="title desc">
+  <title id="title">Training and validation curves versus model complexity</title>
+  <desc id="desc">A chart shows training error decreasing with model complexity while validation error first decreases and then increases, with underfitting, good generalization, and overfitting regions marked.</desc>
+  <rect width="760" height="540" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="72" y="58" font-size="28" font-weight="bold">Training fit and generalization do not improve in the same way</text>
+    <text x="72" y="88" font-size="19">As model complexity grows, training error often keeps falling while validation error may turn upward.</text>
+  </g>
+
+  <g fill="#f7fafc">
+    <rect x="90" y="128" width="180" height="300"/>
+    <rect x="270" y="128" width="180" height="300"/>
+    <rect x="450" y="128" width="220" height="300"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="bold">
+    <text x="180" y="158" text-anchor="middle">underfit</text>
+    <text x="360" y="158" text-anchor="middle">good range</text>
+    <text x="560" y="158" text-anchor="middle">overfit</text>
+  </g>
+
+  <g stroke="#d9e2ec" stroke-width="1.5">
+    <line x1="120" y1="420" x2="680" y2="420"/>
+    <line x1="120" y1="350" x2="680" y2="350"/>
+    <line x1="120" y1="280" x2="680" y2="280"/>
+    <line x1="120" y1="210" x2="680" y2="210"/>
+    <line x1="120" y1="140" x2="680" y2="140"/>
+    <line x1="180" y1="120" x2="180" y2="440"/>
+    <line x1="280" y1="120" x2="280" y2="440"/>
+    <line x1="380" y1="120" x2="380" y2="440"/>
+    <line x1="480" y1="120" x2="480" y2="440"/>
+    <line x1="580" y1="120" x2="580" y2="440"/>
+  </g>
+
+  <g stroke="#102a43" stroke-width="2.5">
+    <line x1="120" y1="420" x2="680" y2="420"/>
+    <line x1="120" y1="440" x2="120" y2="120"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="20">
+    <text x="650" y="456">model complexity</text>
+    <text x="34" y="146">error</text>
+  </g>
+
+  <g fill="none" stroke="#2f855a" stroke-width="5">
+    <path d="M 132 354 C 205 320, 286 286, 360 248 C 440 208, 525 182, 666 164"/>
+  </g>
+  <g fill="none" stroke="#c53030" stroke-width="5">
+    <path d="M 132 312 C 220 246, 304 206, 388 194 C 452 186, 520 208, 586 250 C 622 272, 648 300, 666 322"/>
+  </g>
+
+  <g fill="#2f855a" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="534" y="182">training error</text>
+  </g>
+  <g fill="#c53030" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="500" y="236">validation error</text>
+  </g>
+
+  <g stroke="#7c3aed" stroke-width="3.5" stroke-dasharray="10 7">
+    <line x1="432" y1="140" x2="432" y2="420"/>
+  </g>
+  <g fill="#7c3aed" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold">
+    <text x="446" y="176">best generalization zone</text>
+  </g>
+
+  <g stroke="#d97706" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <path d="M 612 116 C 640 138, 652 170, 650 212"/>
+    <polyline points="632,198 650,216 662,193"/>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="bold">
+    <text x="548" y="114">regularization, early stopping,</text>
+    <text x="548" y="138">model selection pull you back</text>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="128" y="392">too simple:</text>
+    <text x="128" y="416">high bias</text>
+    <text x="330" y="392">main pattern captured,</text>
+    <text x="330" y="416">generalization strongest</text>
+    <text x="518" y="392">too complex:</text>
+    <text x="518" y="416">variance grows</text>
+  </g>
+</svg>

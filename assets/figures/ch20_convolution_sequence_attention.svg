@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="560" viewBox="0 0 760 560" role="img" aria-labelledby="title desc">
+  <title id="title">Convolution, sequence state, and attention</title>
+  <desc id="desc">Three side-by-side panels show convolution scanning a local window, a sequence model updating hidden states over time, and attention assigning weighted links from a query to multiple tokens.</desc>
+  <rect width="760" height="560" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="54" y="56" font-size="28" font-weight="bold">Three modern structures, one familiar math backbone</text>
+    <text x="54" y="86" font-size="19">Convolution scans locally, sequence states carry context, and attention redistributes weights by relevance.</text>
+  </g>
+
+  <g fill="#f8fbff" stroke="#bfd3e6" stroke-width="2.5">
+    <rect x="34" y="122" width="220" height="320" rx="18"/>
+    <rect x="270" y="122" width="220" height="320" rx="18"/>
+    <rect x="506" y="122" width="220" height="320" rx="18"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold">
+    <text x="144" y="160" text-anchor="middle">convolution</text>
+    <text x="380" y="160" text-anchor="middle">sequence state</text>
+    <text x="616" y="160" text-anchor="middle">attention</text>
+  </g>
+
+  <g fill="#d9e2ec">
+    <rect x="60" y="228" width="22" height="58" rx="5"/>
+    <rect x="88" y="208" width="22" height="78" rx="5"/>
+    <rect x="116" y="174" width="22" height="112" rx="5"/>
+    <rect x="144" y="248" width="22" height="38" rx="5"/>
+    <rect x="172" y="220" width="22" height="66" rx="5"/>
+    <rect x="200" y="194" width="22" height="92" rx="5"/>
+  </g>
+  <g fill="none" stroke="#3366cc" stroke-width="4">
+    <rect x="84" y="164" width="88" height="132" rx="10"/>
+  </g>
+  <g fill="#3366cc" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="bold">
+    <text x="128" y="146" text-anchor="middle">shared kernel</text>
+  </g>
+  <g stroke="#486581" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="176" y1="230" x2="212" y2="230"/>
+    <polyline points="196,214 216,230 196,246"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="144" y="332" text-anchor="middle">look at one local window,</text>
+    <text x="144" y="356" text-anchor="middle">then slide and reuse</text>
+    <text x="144" y="380" text-anchor="middle">the same weights</text>
+  </g>
+
+  <g fill="#e6fffa" stroke="#2f855a" stroke-width="3">
+    <circle cx="314" cy="246" r="24"/>
+    <circle cx="382" cy="246" r="24"/>
+    <circle cx="450" cy="246" r="24"/>
+    <circle cx="348" cy="314" r="24"/>
+    <circle cx="416" cy="314" r="24"/>
+  </g>
+  <g stroke="#2f855a" stroke-width="4" fill="none" stroke-linecap="round">
+    <line x1="338" y1="246" x2="358" y2="246"/>
+    <line x1="406" y1="246" x2="426" y2="246"/>
+    <line x1="330" y1="262" x2="340" y2="296"/>
+    <line x1="398" y1="262" x2="408" y2="296"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold">
+    <text x="314" y="252" text-anchor="middle">h1</text>
+    <text x="382" y="252" text-anchor="middle">h2</text>
+    <text x="450" y="252" text-anchor="middle">h3</text>
+    <text x="348" y="320" text-anchor="middle">x4</text>
+    <text x="416" y="320" text-anchor="middle">x5</text>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="380" y="356" text-anchor="middle">state keeps a compact memory,</text>
+    <text x="380" y="380" text-anchor="middle">then updates when new input arrives</text>
+  </g>
+
+  <g fill="#eef2ff" stroke="#7c3aed" stroke-width="3">
+    <circle cx="546" cy="332" r="22"/>
+    <rect x="594" y="214" width="34" height="34" rx="7"/>
+    <rect x="650" y="168" width="34" height="34" rx="7"/>
+    <rect x="650" y="252" width="34" height="34" rx="7"/>
+    <rect x="650" y="336" width="34" height="34" rx="7"/>
+  </g>
+  <g stroke-linecap="round" fill="none">
+    <line x1="568" y1="332" x2="594" y2="231" stroke="#d97706" stroke-width="5"/>
+    <line x1="568" y1="332" x2="650" y2="185" stroke="#d97706" stroke-width="2.5"/>
+    <line x1="568" y1="332" x2="650" y2="269" stroke="#3366cc" stroke-width="4"/>
+    <line x1="568" y1="332" x2="650" y2="353" stroke="#94a3b8" stroke-width="2"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="bold">
+    <text x="546" y="338" text-anchor="middle">q</text>
+    <text x="611" y="236" text-anchor="middle">v1</text>
+    <text x="667" y="190" text-anchor="middle">v2</text>
+    <text x="667" y="274" text-anchor="middle">v3</text>
+    <text x="667" y="358" text-anchor="middle">v4</text>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold">
+    <text x="602" y="314">higher weight</text>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="616" y="396" text-anchor="middle">query compares relevance,</text>
+    <text x="616" y="420" text-anchor="middle">then builds a weighted sum</text>
+  </g>
+
+  <g stroke="#486581" stroke-width="4" stroke-linecap="round" fill="none">
+    <line x1="254" y1="282" x2="270" y2="282"/>
+    <polyline points="256,266 274,282 256,298"/>
+    <line x1="490" y1="282" x2="506" y2="282"/>
+    <polyline points="492,266 510,282 492,298"/>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="52" y="502">Convolution reuses one local pattern detector. Sequence models pass context through time. Attention reweights information dynamically.</text>
+  </g>
+</svg>
