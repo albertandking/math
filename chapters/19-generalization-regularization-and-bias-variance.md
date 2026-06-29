@@ -325,8 +325,8 @@ for complexity in range(1, 9):
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="../../">
-    <strong>返回首页</strong>
-    回到全书总览页
+  <a href="../20-convolutions-sequences-and-attention/">
+    <strong>下一章</strong>
+    进入第 20 章：卷积、序列与注意力的数学入口
   </a>
 </div>

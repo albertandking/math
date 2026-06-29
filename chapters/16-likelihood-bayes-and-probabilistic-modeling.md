@@ -473,8 +473,8 @@ for probability in candidate_probabilities:
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="../../">
-    <strong>返回首页</strong>
-    回到全书总览页
+  <a href="../17-information-theory/">
+    <strong>下一章</strong>
+    进入第 17 章：信息论基础
   </a>
 </div>

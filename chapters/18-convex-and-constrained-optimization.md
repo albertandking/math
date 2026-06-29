@@ -417,8 +417,8 @@ print("非凸函数轨迹:", gradient_descent_nonconvex(initial_value=0.5, learn
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="../../">
-    <strong>返回首页</strong>
-    回到全书总览页
+  <a href="../19-generalization-regularization-and-bias-variance/">
+    <strong>下一章</strong>
+    进入第 19 章：泛化、正则化与偏差-方差
   </a>
 </div>
