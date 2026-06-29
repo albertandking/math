@@ -575,8 +575,8 @@ print("对 x 的梯度:", d_loss_d_input)
     <strong>章节目录</strong>
     返回章节导航页
   </a>
-  <a href="../../">
-    <strong>返回首页</strong>
-    回到全书总览页
+  <a href="../16-likelihood-bayes-and-probabilistic-modeling/">
+    <strong>下一章</strong>
+    进入第 16 章：最大似然、最大后验与概率建模
   </a>
 </div>

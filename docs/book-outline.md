@@ -136,6 +136,31 @@
     - 计算图、形状匹配与梯度组织
     - 自动求导与反向模式的基本机制
 
+16. `16-likelihood-bayes-and-probabilistic-modeling.md`
+    - 概率模型、似然与对数似然
+    - 最大似然、最大后验与先验
+    - 负对数似然、正则化与概率建模视角
+
+17. `17-information-theory.md`
+    - 信息量、熵与平均不确定性
+    - 交叉熵与 KL 散度
+    - 从信息论角度理解分类损失与分布匹配
+
+18. `18-convex-and-constrained-optimization.md`
+    - 凸集、凸函数与凸优化
+    - 约束优化与拉格朗日函数
+    - 对偶视角与结构化优化直觉
+
+19. `19-generalization-regularization-and-bias-variance.md`
+    - 训练误差、验证误差与泛化
+    - 正则化、模型复杂度与过拟合
+    - 偏差-方差权衡与模型选择
+
+20. `20-convolutions-sequences-and-attention.md`
+    - 卷积与参数共享
+    - 序列状态与时间依赖
+    - 注意力、自注意力与位置编码
+
 ## 章节模板 { #chapter-template }
 
 本节是全书章节结构的**唯一权威来源**。其他页面（如章节目录）若需说明章节结构，应链接到本节，而不要另抄一份，以免出现新旧不一致。

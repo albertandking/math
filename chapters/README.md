@@ -99,6 +99,21 @@
 - **第 15 章 矩阵微积分与自动求导**  
   [阅读](15-matrix-calculus-and-autodiff.md)
 
+- **第 16 章 最大似然、最大后验与概率建模**  
+  [阅读](16-likelihood-bayes-and-probabilistic-modeling.md)
+
+- **第 17 章 信息论基础**  
+  [阅读](17-information-theory.md)
+
+- **第 18 章 凸优化与约束优化**  
+  [阅读](18-convex-and-constrained-optimization.md)
+
+- **第 19 章 泛化、正则化与偏差-方差**  
+  [阅读](19-generalization-regularization-and-bias-variance.md)
+
+- **第 20 章 卷积、序列与注意力的数学入口**  
+  [阅读](20-convolutions-sequences-and-attention.md)
+
 </div>
 
 ## 阅读方式建议
