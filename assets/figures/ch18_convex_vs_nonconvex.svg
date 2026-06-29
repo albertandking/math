@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" role="img" aria-labelledby="title desc">
+  <title id="title">Convex versus non-convex landscape</title>
+  <desc id="desc">A side-by-side comparison shows a convex bowl with one minimum and a non-convex curve with several valleys, highlighting why local information is more trustworthy in convex optimization.</desc>
+  <rect width="760" height="520" fill="#ffffff"/>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif">
+    <text x="58" y="56" font-size="28" font-weight="bold">Convex problems and non-convex problems do not give local information the same reliability</text>
+    <text x="58" y="86" font-size="19">A convex bowl has one bottom. A non-convex landscape may have several valleys and hills.</text>
+  </g>
+
+  <g fill="#f8fbff" stroke="#bfd3e6" stroke-width="2.5">
+    <rect x="52" y="124" width="284" height="280" rx="18"/>
+    <rect x="424" y="124" width="284" height="280" rx="18"/>
+  </g>
+
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold">
+    <text x="194" y="158" text-anchor="middle">convex</text>
+    <text x="566" y="158" text-anchor="middle">non-convex</text>
+  </g>
+
+  <g stroke="#d9e2ec" stroke-width="1.5">
+    <line x1="88" y1="352" x2="302" y2="352"/>
+    <line x1="88" y1="282" x2="302" y2="282"/>
+    <line x1="88" y1="212" x2="302" y2="212"/>
+    <line x1="460" y1="352" x2="674" y2="352"/>
+    <line x1="460" y1="282" x2="674" y2="282"/>
+    <line x1="460" y1="212" x2="674" y2="212"/>
+  </g>
+
+  <g fill="none" stroke="#3366cc" stroke-width="5">
+    <path d="M 96 194 C 130 260, 162 314, 194 334 C 226 314, 258 260, 292 194"/>
+  </g>
+  <g fill="#3366cc">
+    <circle cx="194" cy="334" r="7"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="208" y="326">one global minimum</text>
+    <text x="110" y="382">wherever you start,</text>
+    <text x="110" y="406">local descent points toward the same bowl bottom</text>
+  </g>
+
+  <g fill="none" stroke="#c53030" stroke-width="5">
+    <path d="M 468 238 C 500 320, 522 344, 544 308 C 566 272, 584 212, 606 232 C 628 252, 648 330, 674 294"/>
+  </g>
+  <g fill="#c53030">
+    <circle cx="544" cy="308" r="7"/>
+    <circle cx="658" cy="302" r="7"/>
+  </g>
+  <g fill="#102a43" font-family="Arial, Helvetica, sans-serif" font-size="18">
+    <text x="558" y="332">local valley</text>
+    <text x="616" y="286">another valley</text>
+    <text x="474" y="382">local information may send you to different places</text>
+    <text x="474" y="406">because the landscape has several dips and rises</text>
+  </g>
+
+  <g stroke="#d97706" stroke-width="3.5" fill="none" stroke-linecap="round">
+    <line x1="348" y1="264" x2="412" y2="264"/>
+    <polyline points="394,247 416,264 394,281"/>
+  </g>
+  <g fill="#d97706" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold">
+    <text x="348" y="236">same descent rule,</text>
+    <text x="348" y="260">very different trust level</text>
+  </g>
+
+  <g fill="#334e68" font-family="Arial, Helvetica, sans-serif" font-size="19">
+    <text x="62" y="476">Convexity matters because it makes local information far more reliable when you reason about optimization.</text>
+  </g>
+</svg>
