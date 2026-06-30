@@ -11,6 +11,7 @@ use_directory_urls: true
 exclude_docs: |
   .*
   assets/**/README.md
+  docs/superpowers/**
 
 theme:
   name: material
